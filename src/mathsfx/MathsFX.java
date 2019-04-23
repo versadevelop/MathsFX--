@@ -382,15 +382,11 @@ public class MathsFX extends Application {
         Number61_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
         Number55_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
         help_Askisi2_prosthesi.setOnAction(e -> Help.display("Βοήθεια", Scale));
-        Continue_Askisi2_prosthesi.setOnAction(e -> Window.setScene(sceneAddSecond));
         Number77_Askisi2_Prosthesi.setOnAction(e -> Window.setScene(sceneAddFirstCorrect));
         Number9_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
         Number5_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
-        //btnReturn3.setOnAction(e -> Window.setScene(scene));
         help_Askisi3_prosthesi.setOnAction(e -> Help2.display("Βοήθεια", "Το κάθε δάχτυλο είναι μια μονάδα!"));
-        //btnReturn4.setOnAction(e -> Window.setScene(scene));
         Number7_Askisi3_prosthesi.setOnAction(e -> Window.setScene(sceneAddSecondCorrect));
-        Continue_Askisi3_prosthesi.setOnAction(e -> Window.setScene(sceneAddThird));
         Number49_Askisi4_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
         Number70_Askisi4_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
         Number65_Askisi4_prosthesi.setOnAction(e -> Window.setScene(sceneAddThirdCorrect));
@@ -613,6 +609,28 @@ public class MathsFX extends Application {
                 ft.setToValue(1);
                 ft.play();
                 primaryStage.setScene(sceneAddFirst);
+            }
+        });
+        Continue_Askisi2_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi3_prosthesi);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneAddSecond);
+            }
+        });
+        Continue_Askisi3_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi4_prosthesi);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneAddThird);
             }
         });
         btnAddCorrentAnswerOnFirst.setOnAction(new EventHandler<ActionEvent>() {
