@@ -88,6 +88,7 @@ public class MathsFX extends Application {
     private Button btnReturn5 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button btnReturn6 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button btnNext = new CreateReturnButton("         Επόμενη ->        ", 975, 670);
+    private Button button1 = new CreateButtonsAdd("/Number_61.jpg",230,20);       
     //Buttons for VideoPlayer
     private Button btnStart = new CreateButton("         Πρόσθεση          ", 210, 650, 0);
     private Button btnStart2 = new CreateButton("         Αφαίρεση          ", 370, 650, 0);
@@ -106,7 +107,7 @@ public class MathsFX extends Application {
     private Text text4 = new CreateTextForNumbers(750, 370, "=", Color.RED, 70);
 
     //Αλεξ
-    Button button1 = new Button();
+    //Button button1 = new Button();
     Button button2 = new Button();
     Button button3 = new Button();
     Button help = new Button();
@@ -115,7 +116,7 @@ public class MathsFX extends Application {
     Button btnContinue2 = new Button("         Συνέχεια          ");
 
     ImageView Askisi1 = new ImageView();
-    Image Number61Image = new Image(getClass().getResourceAsStream("/Number_61.jpg"), 60, 60, false, false);
+   // Image Number61Image = new Image(getClass().getResourceAsStream("/Number_61.jpg"), 60, 60, false, false);
     Image Askisi_Image = new Image(getClass().getResourceAsStream("/Askisi_1.png"));
     Image Number77Image = new Image(getClass().getResourceAsStream("/Number_77.jpg"), 60, 60, false, false);
     Image Number55Image = new Image(getClass().getResourceAsStream("/Number_55.jpg"), 60, 60, false, false);
@@ -365,10 +366,10 @@ public class MathsFX extends Application {
         button2.setTranslateY(20);
 
         //Number 61 button
-        button1 = new Button();
+       /* button1 = new Button();
         button1.setGraphic(new ImageView(Number61Image));
         button1.setTranslateX(230);
-        button1.setTranslateY(20);
+        button1.setTranslateY(20);*/
 
         //Number 55 button
         button3 = new Button();
