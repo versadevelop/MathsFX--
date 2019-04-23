@@ -98,11 +98,11 @@ public class MathsFX extends Application {
     private Button Number49_Askisi4_prosthesi = new CreateButtonsAddWithMinWidth("/Number_49(cube).png", 10, 30, 133, 146);
     private Button Number70_Askisi4_prosthesi = new CreateButtonsAddWithMinWidth("/Number_70(cube).png", -230, 30, 133, 146);
     //Buttons for VideoPlayer
-    private Button btnStart = new CreateButton("         Πρόσθεση          ", 210, 650, 0);
-    private Button btnStart2 = new CreateButton("         Αφαίρεση          ", 370, 650, 0);
-    private Button btnStart3 = new CreateButton("         Σύγκριση          ", 525, 650, 0);
-    private Button btnStart4 = new CreateButton("         Πολλαπλασιασμός         ", 680, 650, 0);
-    private Button btnStart5 = new CreateButton("         Διαίρεση          ", 880, 650, 0);
+    private Button btnStartAddVideo = new CreateButton("         Πρόσθεση          ", 210, 650, 0);
+    private Button btnStartMinusVideo = new CreateButton("         Αφαίρεση          ", 370, 650, 0);
+    private Button btnStartCompareVideo = new CreateButton("         Σύγκριση          ", 525, 650, 0);
+    private Button btnStartMultiVideo = new CreateButton("         Πολλαπλασιασμός         ", 680, 650, 0);
+    private Button btnStartDivideVideo = new CreateButton("         Διαίρεση          ", 880, 650, 0);
     //Buttons for Answers
     private Button btnAdd1 = new CreateButtonAnswers("30", 390, 450);
     private Button btnAddCorrentAnswerOnFirst = new CreateButtonAnswers("27", 535, 450);
@@ -116,8 +116,8 @@ public class MathsFX extends Application {
 
     //Αλεξ
     Button help_Askisi2_prosthesi = new CreateHelpButton(170, 0);
-    Button Continue_Askisi2_prosthesi = new Button("         Συνέχεια ->        ");
-    Button Continue_Askisi3_prosthesi = new Button("         Συνέχεια ->         ");
+    Button Continue_Askisi2_prosthesi = new ButtonForContinue("         Συνέχεια ->        ");
+    Button Continue_Askisi3_prosthesi = new ButtonForContinue("         Συνέχεια ->         ");
 
     ImageView Askisi1_prosthesi = new ImageView();
     Image Askisi1_prosthesi_Image = new Image(getClass().getResourceAsStream("/Askisi_1.png"));
@@ -327,11 +327,11 @@ public class MathsFX extends Application {
 
         //Button Actions
         btnExit.setOnAction(e -> Platform.exit());
-        btnStart.setOnAction(e -> startAdd());
-        btnStart2.setOnAction(e -> startMinus());
-        btnStart3.setOnAction(e -> startCompare());
-        btnStart4.setOnAction(e -> startMulti());
-        btnStart5.setOnAction(e -> startDivide());
+        btnStartAddVideo.setOnAction(e -> startAdd());
+        btnStartMinusVideo.setOnAction(e -> startMinus());
+        btnStartCompareVideo.setOnAction(e -> startCompare());
+        btnStartMultiVideo.setOnAction(e -> startMulti());
+        btnStartDivideVideo.setOnAction(e -> startDivide());
 
         //Αλεξ
         Askisi1_prosthesi = new ImageView(Askisi1_prosthesi_Image);
@@ -352,8 +352,6 @@ public class MathsFX extends Application {
 
         //Askisi2 Solution
         Askisi2_prosthesi_Solution = new ImageView(Askisi2_prosthesi_Solution_Image);
-        Continue_Askisi2_prosthesi.setSkin(new MyButtonSkin(Continue_Askisi2_prosthesi));
-        Continue_Askisi3_prosthesi.setSkin(new MyButtonSkin(Continue_Askisi3_prosthesi));
 
         //Askisi4 Solution
         Askisi3_prosthesi_Solution = new ImageView(Askisi3_prosthesi_Image_Solution);
@@ -366,9 +364,6 @@ public class MathsFX extends Application {
         StackPane Layout_Askisi4_prosthesi = new StackPane();
         StackPane Layout_Askisi4_prosthesi_Solution = new StackPane();
         
-        //CSS for Συνέχεια button
-        Continue_Askisi2_prosthesi.getStylesheets().add(getClass().getResource("btnAnswers.css").toExternalForm());
-        Continue_Askisi3_prosthesi.getStylesheets().add(getClass().getResource("btnAnswers.css").toExternalForm());
 
         Layout_Askisi2_prosthesi.getChildren().addAll(Askisi1_prosthesi, Number61_Askisi2_prosthesi, Number77_Askisi2_Prosthesi, Number55_Askisi2_prosthesi, Return_Askisi2_prosthesi, help_Askisi2_prosthesi);
         Layout_Askisi2_prosthesi_Solution.getChildren().addAll(ScaleSolution, Return_Askisi2_prosthesi_Solution, Continue_Askisi2_prosthesi);
@@ -620,7 +615,6 @@ public class MathsFX extends Application {
                 primaryStage.setScene(sceneAddFirst);
             }
         });
-
         btnAddCorrentAnswerOnFirst.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -648,12 +642,11 @@ public class MathsFX extends Application {
 
         //Scene, Stages
         rootAdd.getChildren().addAll(imageView3, titleAdd, btnReturnOnAdd, text, text2, text3, text4, btnAdd1, btnAddCorrentAnswerOnFirst, btnAdd3);
-        rootLearn.getChildren().addAll(imageView2, btnStart, titleLearn, btnStart2, btnStart3, btnStart4, btnStart5, btnReturnMine);
+        rootLearn.getChildren().addAll(imageView2, btnStartAddVideo, titleLearn, btnStartMinusVideo, btnStartCompareVideo, btnStartMultiVideo, btnStartDivideVideo, btnReturnMine);
         root.getChildren().addAll(imageView, title, menuBox, line);
 
         primaryStage.setTitle("Μαθηματικά Β δημοτικού");
         primaryStage.setScene(scene);
-        //primaryStage.setResizable(false);
         primaryStage.show();
 
     }
