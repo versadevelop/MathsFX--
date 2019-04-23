@@ -11,18 +11,15 @@ import javafx.scene.image.ImageView;
 
 /**
  *
- * @author jelis
+ * @author Alexandros
  */
-public class CreateButtonsAddWithMinWidth extends Button {
+public class CreateHelpButton extends Button {
 
-    public CreateButtonsAddWithMinWidth(String image,double W,double Y,double mH,double mW) {
-        Image insert = new Image(getClass().getResourceAsStream(image), 146, 133, false, false);
-        setGraphic(new ImageView(insert));
+    public CreateHelpButton(double W,double Y) {
+        Image HelpImage = new Image(getClass().getResourceAsStream("/info2.jpg"), 20, 20, false, false);
+        setGraphic(new ImageView(HelpImage));
         setTranslateX(W);
         setTranslateY(Y);
         setSkin(new MyButtonSkin(this));
-        setMinHeight(mH);
-        setMinWidth(mW);
     }
-    
 }
