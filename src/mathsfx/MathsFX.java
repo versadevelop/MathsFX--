@@ -81,14 +81,22 @@ public class MathsFX extends Application {
     private Button btnExit = new CreateButton("         Εξόδος          ", lineX + 10, lineY + 60, 0);
     private Button btnReturnMine = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
     private Button btnReturnOnAdd = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
-    private Button btnReturn = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
-    private Button btnReturn2 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
-    private Button btnReturn3 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
-    private Button btnReturn4 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
-    private Button btnReturn5 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    private Button Return_Askisi2_prosthesi = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    private Button Return_Askisi2_prosthesi_Solution = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    private Button Return_Askisi3_prosthesi = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    private Button Return_Askisi3_prosthesi_Solution = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    private Button Return_Askisi4_prosthesi = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button btnReturn6 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button btnNext = new CreateReturnButton("         Επόμενη ->        ", 975, 670);
-    private Button button1 = new CreateButtonsAdd("/Number_61.jpg",230,20);       
+    private Button Number61_Askisi2_prosthesi = new CreateButtonsAdd("/Number_61.jpg",230,20); 
+    private Button Number77_Askisi2_Prosthesi = new CreateButtonsAdd("/Number_77.jpg", 10 , 20);
+    private Button Number55_Askisi2_prosthesi = new CreateButtonsAdd("/Number_55.jpg", -230, 20);
+    private Button Number5_Askisi3_prosthesi = new CreateButtonsAdd("/Number_5.jpg", 230, 20);
+    private Button Number9_Askisi3_prosthesi = new CreateButtonsAdd("/Number_9.jpg", 10, 20);
+    private Button Number7_Askisi3_prosthesi = new CreateButtonsAdd("/Number_7.jpg", -230, 20);
+    private Button Number65_Askisi4_prosthesi = new CreateButtonsAddWithMinWidth("/Number_65(cube).png", 230, 30, 133, 146);
+    private Button Number49_Askisi4_prosthesi = new CreateButtonsAddWithMinWidth("/Number_49(cube).png", 10, 30, 133, 146);
+    private Button Number70_Askisi4_prosthesi = new CreateButtonsAddWithMinWidth("/Number_70(cube).png", -230, 30, 133, 146);
     //Buttons for VideoPlayer
     private Button btnStart = new CreateButton("         Πρόσθεση          ", 210, 650, 0);
     private Button btnStart2 = new CreateButton("         Αφαίρεση          ", 370, 650, 0);
@@ -108,19 +116,19 @@ public class MathsFX extends Application {
 
     //Αλεξ
     //Button button1 = new Button();
-    Button button2 = new Button();
-    Button button3 = new Button();
-    Button help = new Button();
+    //Button Number77_Askisi2_Prosthesi = new Button();
+    //Button Number55_Askisi2_prosthesi = new Button();
+    Button help_Askisi2_prosthesi = new CreateHelpButton(170, 0);
 //    Button btnReturn = new Button("         Επιστροφή         ");
-    Button btnContinue = new Button("         Συνέχεια          ");
-    Button btnContinue2 = new Button("         Συνέχεια          ");
+    Button Continue_Askisi2_prosthesi = new Button("         Συνέχεια ->        ");
+    Button Continue_Askisi3_prosthesi = new Button("         Συνέχεια ->         ");
 
-    ImageView Askisi1 = new ImageView();
+    ImageView Askisi1_prosthesi = new ImageView();
    // Image Number61Image = new Image(getClass().getResourceAsStream("/Number_61.jpg"), 60, 60, false, false);
-    Image Askisi_Image = new Image(getClass().getResourceAsStream("/Askisi_1.png"));
-    Image Number77Image = new Image(getClass().getResourceAsStream("/Number_77.jpg"), 60, 60, false, false);
-    Image Number55Image = new Image(getClass().getResourceAsStream("/Number_55.jpg"), 60, 60, false, false);
-    Image HelpImage = new Image(getClass().getResourceAsStream("/info2.jpg"), 20, 20, false, false);
+    Image Askisi1_prosthesi_Image = new Image(getClass().getResourceAsStream("/Askisi_1.png"));
+    //Image Number77Image = new Image(getClass().getResourceAsStream("/Number_77.jpg"), 60, 60, false, false);
+    //Image Number55Image = new Image(getClass().getResourceAsStream("/Number_55.jpg"), 60, 60, false, false);
+    //Image HelpImage = new Image(getClass().getResourceAsStream("/info2.jpg"), 20, 20, false, false);
     Image ScaleImage = new Image(getClass().getResourceAsStream("/Scale.jpg"));
     ImageView Scale = new ImageView();
     Image Help3Image1 = new Image(getClass().getResourceAsStream("/Dekada_Ask3.png"));
@@ -130,30 +138,33 @@ public class MathsFX extends Application {
     ImageView Help3_1 = new ImageView();
     ImageView Help3_2 = new ImageView();
 
-    Image Number5Image = new Image(getClass().getResourceAsStream("/Number_5.jpg"), 60, 60, false, false);
-    Image Number7Image = new Image(getClass().getResourceAsStream("/Number_7.jpg"), 60, 60, false, false);
-    Image Number9Image = new Image(getClass().getResourceAsStream("/Number_9.jpg"), 60, 60, false, false);
-    Image Askisi2_Image = new Image(getClass().getResourceAsStream("/Askisi_2.png"));
-    ImageView Askisi2 = new ImageView();
-    Image Askisi2_Solution_Image = new Image(getClass().getResourceAsStream("/Askisi_2_Solution.jpg"));
-    ImageView Askisi2_Solution = new ImageView();
+    //Image Number5Image = new Image(getClass().getResourceAsStream("/Number_5.jpg"), 60, 60, false, false);
+    //Image Number7Image = new Image(getClass().getResourceAsStream("/Number_7.jpg"), 60, 60, false, false);
+    //Image Number9Image = new Image(getClass().getResourceAsStream("/Number_9.jpg"), 60, 60, false, false);
+    Image Askisi2_prosthesi_Image = new Image(getClass().getResourceAsStream("/Askisi_2.png"));
+    ImageView Askisi2_prosthesi = new ImageView();
+    Image Askisi2_prosthesi_Solution_Image = new Image(getClass().getResourceAsStream("/Askisi_2_Solution.jpg"));
+    ImageView Askisi2_prosthesi_Solution = new ImageView();
 
-    Button button4 = new Button();
-    Button button5 = new Button();
-    Button button6 = new Button();
-    Button help2 = new Button();
+    //Button Number5_Askisi3_prosthesi = new Button();
+    //Button Number9_Askisi3_prosthesi = new Button();
+    //Button Number7_Askisi3_prosthesi = new Button();
+    Button help_Askisi3_prosthesi = new CreateHelpButton(170, 0);
 
-    Image Number70Image = new Image(getClass().getResourceAsStream("/Number_70(cube).png"), 146, 133, false, false);
-    Image Number65Image = new Image(getClass().getResourceAsStream("/Number_65(cube).png"), 146, 133, false, false);
-    Image Number49Image = new Image(getClass().getResourceAsStream("/Number_49(cube).png"), 146, 133, false, false);
-    Image Askisi3_Image = new Image(getClass().getResourceAsStream("/Askisi_3.png"));
-    ImageView Askisi3 = new ImageView();
+    //Image Number70Image = new Image(getClass().getResourceAsStream("/Number_70(cube).png"), 146, 133, false, false);
+    //Image Number65Image = new Image(getClass().getResourceAsStream("/Number_65(cube).png"), 146, 133, false, false);
+    //Image Number49Image = new Image(getClass().getResourceAsStream("/Number_49(cube).png"), 146, 133, false, false);
+    Image Askisi3_prosthesi_Image = new Image(getClass().getResourceAsStream("/Askisi_3.png"));
+    ImageView Askisi3_prosthesi = new ImageView();
 
-    Button button7 = new Button();
-    Button button8 = new Button();
-    Button button9 = new Button();
-    Button help3 = new Button();
-
+    //Button Number65_Askisi4_prosthesi = new Button();
+    //Button Number49_Askisi4_prosthesi = new Button();
+    //Button Number70_Askisi4_prosthesi = new Button();
+    Button help_Askisi4_prosthesi = new CreateHelpButton(170, 0);
+    Image Askisi3_prosthesi_Image_Solution = new Image(getClass().getResourceAsStream("/Askisi_3_Solution.png"));
+    ImageView Askisi3_prosthesi_Solution = new ImageView();
+    Button Return_Askisi4_prosthesi_Solution = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    
     //SceneAle scene2, scene3, scene4, scene5;
     Stage Window;
 
@@ -340,9 +351,9 @@ public class MathsFX extends Application {
         btnStart5.setOnAction(e -> startDivide());
 
         //Αλεξ
-        Askisi1 = new ImageView(Askisi_Image);
-        Askisi2 = new ImageView(Askisi2_Image);
-        Askisi3 = new ImageView(Askisi3_Image);
+        Askisi1_prosthesi = new ImageView(Askisi1_prosthesi_Image);
+        Askisi2_prosthesi = new ImageView(Askisi2_prosthesi_Image);
+        Askisi3_prosthesi = new ImageView(Askisi3_prosthesi_Image);
         Window = primaryStage;
         Window.setTitle("Άσκησεις");
 
@@ -357,13 +368,16 @@ public class MathsFX extends Application {
         ScaleSolution = new ImageView(ScaleSolutionImage);
 
         //Askisi2 Solution
-        Askisi2_Solution = new ImageView(Askisi2_Solution_Image);
+        Askisi2_prosthesi_Solution = new ImageView(Askisi2_prosthesi_Solution_Image);
 
-        //Number 77 button (Correct Button)
-        button2 = new Button();
-        button2.setGraphic(new ImageView(Number77Image));
-        button2.setTranslateX(10);
-        button2.setTranslateY(20);
+        //Askisi4 Solution
+        Askisi3_prosthesi_Solution = new ImageView(Askisi3_prosthesi_Image_Solution);
+        
+        /*Number 77 button (Correct Button)
+        Number77_Askisi2_Prosthesi = new Button();
+        Number77_Askisi2_Prosthesi.setGraphic(new ImageView(Number77Image));
+        Number77_Askisi2_Prosthesi.setTranslateX(10);
+        Number77_Askisi2_Prosthesi.setTranslateY(20);*/
 
         //Number 61 button
        /* button1 = new Button();
@@ -371,250 +385,274 @@ public class MathsFX extends Application {
         button1.setTranslateX(230);
         button1.setTranslateY(20);*/
 
-        //Number 55 button
-        button3 = new Button();
-        button3.setGraphic(new ImageView(Number55Image));
-        button3.setTranslateX(-230);
-        button3.setTranslateY(20);
+        /*Number 55 button
+        Number55_Askisi2_prosthesi = new Button();
+        Number55_Askisi2_prosthesi.setGraphic(new ImageView(Number55Image));
+        Number55_Askisi2_prosthesi.setTranslateX(-230);
+        Number55_Askisi2_prosthesi.setTranslateY(20);*/
 
-        //Number 5 button (2nd Exercise)
-        button4 = new Button();
-        button4.setGraphic(new ImageView(Number5Image));
-        button4.setTranslateX(230);
-        button4.setTranslateY(20);
+        /*Number 5 button (2nd Exercise)
+        Number5_Askisi3_prosthesi = new Button();
+        Number5_Askisi3_prosthesi.setGraphic(new ImageView(Number5Image));
+        Number5_Askisi3_prosthesi.setTranslateX(230);
+        Number5_Askisi3_prosthesi.setTranslateY(20);*/
 
-        //Number 9 button (2nd Exercise)
-        button5 = new Button();
-        button5.setGraphic(new ImageView(Number9Image));
-        button5.setTranslateX(10);
-        button5.setTranslateY(20);
+        /*Number 9 button (2nd Exercise)
+        Number9_Askisi3_prosthesi = new Button();
+        Number9_Askisi3_prosthesi.setGraphic(new ImageView(Number9Image));
+        Number9_Askisi3_prosthesi.setTranslateX(10);
+        Number9_Askisi3_prosthesi.setTranslateY(20);*/
 
-        //Number 7 button (2nd Exercise)
-        button6 = new Button();
-        button6.setGraphic(new ImageView(Number7Image));
-        button6.setTranslateX(-230);
-        button6.setTranslateY(20);
+        /*Number 7 button (2nd Exercise)
+        Number7_Askisi3_prosthesi = new Button();
+        Number7_Askisi3_prosthesi.setGraphic(new ImageView(Number7Image));
+        Number7_Askisi3_prosthesi.setTranslateX(-230);
+        Number7_Askisi3_prosthesi.setTranslateY(20);*/
 
-        //Help Button
-        help = new Button();
-        help.setGraphic(new ImageView(HelpImage));
-        help.setTranslateX(170);
-        help.setTranslateY(0);
+        /*Help Button
+        help_Askisi2_prosthesi = new Button();
+        help_Askisi2_prosthesi.setGraphic(new ImageView(HelpImage));
+        help_Askisi2_prosthesi.setTranslateX(170);
+        help_Askisi2_prosthesi.setTranslateY(0);*/
 
-        //Help Button (2nd Exercise)
-        help2 = new Button();
-        help2.setGraphic(new ImageView(HelpImage));
-        help2.setTranslateX(170);
-        help2.setTranslateY(0);
+        /*Help Button (2nd Exercise)
+        help_Askisi3_prosthesi = new Button();
+        help_Askisi3_prosthesi.setGraphic(new ImageView(HelpImage));
+        help_Askisi3_prosthesi.setTranslateX(170);
+        help_Askisi3_prosthesi.setTranslateY(0);*/
 
-        //Help Button (3rd Exercise)
-        help3 = new Button();
-        help3.setGraphic(new ImageView(HelpImage));
-        help3.setTranslateX(170);
-        help3.setTranslateY(0);
+        /*Help Button (3rd Exercise)
+        help_Askisi4_prosthesi = new Button();
+        help_Askisi4_prosthesi.setGraphic(new ImageView(HelpImage));
+        help_Askisi4_prosthesi.setTranslateX(170);
+        help_Askisi4_prosthesi.setTranslateY(0);*/
 
-        //Number 65 Button (3rd Exercise)
-        button7 = new Button();
-        button7.setGraphic(new ImageView(Number65Image));
-        button7.setMinHeight(133);
-        button7.setMinWidth(146);
-        button7.setTranslateX(230);
-        button7.setTranslateY(30);
+        /*Number 65 Button (3rd Exercise)
+        Number65_Askisi4_prosthesi = new Button();
+        Number65_Askisi4_prosthesi.setGraphic(new ImageView(Number65Image));
+        Number65_Askisi4_prosthesi.setMinHeight(133);
+        Number65_Askisi4_prosthesi.setMinWidth(146);
+        Number65_Askisi4_prosthesi.setTranslateX(230);
+        Number65_Askisi4_prosthesi.setTranslateY(30);*/
 
-        //Number 49 Button (3rd Exercise)
-        button8 = new Button();
-        button8.setMinHeight(133);
-        button8.setMinWidth(146);
-        button8.setGraphic(new ImageView(Number49Image));
-        button8.setTranslateX(10);
-        button8.setTranslateY(30);
+        /*Number 49 Button (3rd Exercise)
+        Number49_Askisi4_prosthesi = new Button();
+        Number49_Askisi4_prosthesi.setMinHeight(133);
+        Number49_Askisi4_prosthesi.setMinWidth(146);
+        Number49_Askisi4_prosthesi.setGraphic(new ImageView(Number49Image));
+        Number49_Askisi4_prosthesi.setTranslateX(10);
+        Number49_Askisi4_prosthesi.setTranslateY(30);*/
 
-        //Number 70 Button (3rd Exercise)
-        button9 = new Button();
-        button9.setGraphic(new ImageView(Number70Image));
-        button9.setMinHeight(133);
-        button9.setMinWidth(146);
-        button9.setTranslateX(-230);
-        button9.setTranslateY(30);
+        /*Number 70 Button (3rd Exercise)
+        Number70_Askisi4_prosthesi = new Button();
+        Number70_Askisi4_prosthesi.setGraphic(new ImageView(Number70Image));
+        Number70_Askisi4_prosthesi.setMinHeight(133);
+        Number70_Askisi4_prosthesi.setMinWidth(146);
+        Number70_Askisi4_prosthesi.setTranslateX(-230);
+        Number70_Askisi4_prosthesi.setTranslateY(30);*/
 
-        StackPane layout = new StackPane();
-        StackPane layout2 = new StackPane();
-        StackPane layout3 = new StackPane();
-        StackPane layout4 = new StackPane();
-        StackPane layout5 = new StackPane();
-
+        StackPane Layout_Askisi2_prosthesi = new StackPane();
+        StackPane Layout_Askisi2_prosthesi_Solution = new StackPane();
+        StackPane Layout_Askisi3_prosthesi = new StackPane();
+        StackPane Layout_Askisi3_prosthesi_Solution = new StackPane();
+        StackPane Layout_Askisi4_prosthesi = new StackPane();
+        StackPane Layout_Askisi4_prosthesi_Solution = new StackPane();
+        
         //CSS for Eπιστροφη button
-        //btnReturn.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
-        btnReturn2.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
-        btnReturn3.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
-        btnReturn4.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
-        btnReturn5.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
+        /*btnReturn.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
+        Return_Askisi2_prosthesi_Solution.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
+        Return_Askisi3_prosthesi.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
+        Return_Askisi3_prosthesi_Solution.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
+        Return_Askisi4_prosthesi.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());*/
         //CSS for Συνέχεια button
-        btnContinue.getStylesheets().add(getClass().getResource("btnAnswers.css").toExternalForm());
-        btnContinue2.getStylesheets().add(getClass().getResource("btnAnswers.css").toExternalForm());
+        Continue_Askisi2_prosthesi.getStylesheets().add(getClass().getResource("btnAnswers.css").toExternalForm());
+        Continue_Askisi3_prosthesi.getStylesheets().add(getClass().getResource("btnAnswers.css").toExternalForm());
 
-        layout.getChildren().addAll(Askisi1, button1, button2, button3, btnReturn, help);
-        layout2.getChildren().addAll(ScaleSolution, btnReturn2, btnContinue);
-        layout3.getChildren().addAll(Askisi2, button4, button5, button6, btnReturn3, help2);
-        layout4.getChildren().addAll(Askisi2_Solution, btnReturn4, btnContinue2);
-        layout5.getChildren().addAll(Askisi3, button7, button8, button9, help3, btnReturn5);
+        Layout_Askisi2_prosthesi.getChildren().addAll(Askisi1_prosthesi, Number61_Askisi2_prosthesi, Number77_Askisi2_Prosthesi, Number55_Askisi2_prosthesi, Return_Askisi2_prosthesi, help_Askisi2_prosthesi);
+        Layout_Askisi2_prosthesi_Solution.getChildren().addAll(ScaleSolution, Return_Askisi2_prosthesi_Solution, Continue_Askisi2_prosthesi);
+        Layout_Askisi3_prosthesi.getChildren().addAll(Askisi2_prosthesi, Number5_Askisi3_prosthesi, Number9_Askisi3_prosthesi, Number7_Askisi3_prosthesi, Return_Askisi3_prosthesi, help_Askisi3_prosthesi);
+        Layout_Askisi3_prosthesi_Solution.getChildren().addAll(Askisi2_prosthesi_Solution, Return_Askisi3_prosthesi_Solution, Continue_Askisi3_prosthesi);
+        Layout_Askisi4_prosthesi.getChildren().addAll(Askisi3_prosthesi, Number65_Askisi4_prosthesi, Number49_Askisi4_prosthesi, Number70_Askisi4_prosthesi, help_Askisi4_prosthesi, Return_Askisi4_prosthesi);
+        Layout_Askisi4_prosthesi_Solution.getChildren().addAll(Askisi3_prosthesi_Solution, Return_Askisi4_prosthesi_Solution);
+        
+        Scene sceneAddFirst = new Scene(Layout_Askisi2_prosthesi, 1164, 365);
+        Scene sceneAddFirstCorrect = new Scene(Layout_Askisi2_prosthesi_Solution, 1164, 365);
+        Scene sceneAddSecond = new Scene(Layout_Askisi3_prosthesi, 1164, 365);
+        Scene sceneAddSecondCorrect = new Scene(Layout_Askisi3_prosthesi_Solution, 1164, 365);
+        Scene sceneAddThird = new Scene(Layout_Askisi4_prosthesi, 1164, 600);
+        Scene sceneAddThirdCorrect = new Scene(Layout_Askisi4_prosthesi_Solution, 1164, 600);
+        
+        Number61_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
+        Number55_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
+        help_Askisi2_prosthesi.setOnAction(e -> Help.display("Βοήθεια", Scale));
+        Continue_Askisi2_prosthesi.setOnAction(e -> Window.setScene(sceneAddSecond));
+        Number77_Askisi2_Prosthesi.setOnAction(e -> Window.setScene(sceneAddFirstCorrect));
+        Number9_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
+        Number5_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
+        //btnReturn3.setOnAction(e -> Window.setScene(scene));
+        help_Askisi3_prosthesi.setOnAction(e -> Help2.display("Βοήθεια", "Το κάθε δάχτυλο είναι μια μονάδα!"));
+        //btnReturn4.setOnAction(e -> Window.setScene(scene));
+        Number7_Askisi3_prosthesi.setOnAction(e -> Window.setScene(sceneAddSecondCorrect));
+        Continue_Askisi3_prosthesi.setOnAction(e -> Window.setScene(sceneAddThird));
+        Number49_Askisi4_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
+        Number70_Askisi4_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
+        Number65_Askisi4_prosthesi.setOnAction(e -> Window.setScene(sceneAddThirdCorrect));
+        help_Askisi4_prosthesi.setOnAction(e -> Help3.display("Βοήθεια", Help3_1, Help3_2));
+        Return_Askisi4_prosthesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi4_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi2_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi4_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi2_prosthesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi3_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi3_prosthesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
 
-        Scene sceneAddFirst = new Scene(layout, 1164, 365);
-        Scene sceneFirstCorrect = new Scene(layout2, 1164, 365);
-        Scene sceneAddSecond = new Scene(layout3, 1164, 365);
-        Scene sceneAddSecondCorrect = new Scene(layout4, 1164, 365);
-        Scene sceneAddThird = new Scene(layout5, 1164, 365);
-
-        button1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
-        button3.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
-        help.setOnAction(e -> Help.display("Βοήθεια", Scale));
-        btnContinue.setOnAction(e -> Window.setScene(sceneAddSecond));
-        button2.setOnAction(e -> Window.setScene(sceneFirstCorrect));
-        button5.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
-        button4.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
-        btnReturn3.setOnAction(e -> Window.setScene(scene));
-        help2.setOnAction(e -> Help2.display("Βοήθεια", "Το κάθε δάχτυλο είναι μια μονάδα!"));
-        btnReturn4.setOnAction(e -> Window.setScene(scene));
-        button6.setOnAction(e -> Window.setScene(sceneAddSecondCorrect));
-        btnContinue2.setOnAction(e -> Window.setScene(sceneAddThird));
-        button8.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
-        button9.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπαντηση", "Ξαναπροσπάθησε!"));
-        help3.setOnAction(e -> Help3.display("Βοήθεια", Help3_1, Help3_2));
-        btnReturn5.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                FadeTransition ft = new FadeTransition(Duration.millis(1000));
-                ft.setNode(root);
-                ft.setFromValue(0);
-                ft.setToValue(1);
-                ft.play();
-                primaryStage.setScene(scene);
-                rootAdd.getChildren().removeAll(t, btnNext);
-                ft.setOnFinished(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
-                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
-                    }
-                });
-            }
-        });
-        btnReturn.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                FadeTransition ft = new FadeTransition(Duration.millis(1000));
-                ft.setNode(root);
-                ft.setFromValue(0);
-                ft.setToValue(1);
-                ft.play();
-                primaryStage.setScene(scene);
-                rootAdd.getChildren().removeAll(t, btnNext);
-                ft.setOnFinished(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
-                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
-                    }
-                });
-            }
-        });
-        btnReturn5.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                FadeTransition ft = new FadeTransition(Duration.millis(1000));
-                ft.setNode(root);
-                ft.setFromValue(0);
-                ft.setToValue(1);
-                ft.play();
-                primaryStage.setScene(scene);
-                rootAdd.getChildren().removeAll(t, btnNext);
-                ft.setOnFinished(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
-                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
-                    }
-                });
-            }
-        });
-        btnReturn2.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                FadeTransition ft = new FadeTransition(Duration.millis(1000));
-                ft.setNode(root);
-                ft.setFromValue(0);
-                ft.setToValue(1);
-                ft.play();
-                primaryStage.setScene(scene);
-                rootAdd.getChildren().removeAll(t, btnNext);
-                ft.setOnFinished(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
-                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
-                    }
-                });
-            }
-        });
-        btnReturn3.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                FadeTransition ft = new FadeTransition(Duration.millis(1000));
-                ft.setNode(root);
-                ft.setFromValue(0);
-                ft.setToValue(1);
-                ft.play();
-                primaryStage.setScene(scene);
-                rootAdd.getChildren().removeAll(t, btnNext);
-                ft.setOnFinished(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
-                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
-                    }
-                });
-            }
-        });
-        btnReturn4.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                FadeTransition ft = new FadeTransition(Duration.millis(1000));
-                ft.setNode(root);
-                ft.setFromValue(0);
-                ft.setToValue(1);
-                ft.play();
-                primaryStage.setScene(scene);
-                rootAdd.getChildren().removeAll(t, btnNext);
-                ft.setOnFinished(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
-                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
-                    }
-                });
-            }
-        });
-
-        layout.setAlignment(button1, Pos.TOP_LEFT);
-        layout.setAlignment(button2, Pos.TOP_CENTER);
-        layout.setAlignment(button3, Pos.TOP_RIGHT);
-        layout.setAlignment(btnReturn, Pos.TOP_LEFT);
-        layout.setAlignment(help, Pos.TOP_LEFT);
-        layout2.setAlignment(btnReturn2, Pos.TOP_LEFT);
-        layout2.setAlignment(btnContinue, Pos.TOP_RIGHT);
-        layout3.setAlignment(button4, Pos.TOP_LEFT);
-        layout3.setAlignment(button5, Pos.TOP_CENTER);
-        layout3.setAlignment(button6, Pos.TOP_RIGHT);
-        layout3.setAlignment(help2, Pos.TOP_LEFT);
-        layout3.setAlignment(btnReturn3, Pos.TOP_LEFT);
-        layout4.setAlignment(btnReturn4, Pos.TOP_LEFT);
-        layout4.setAlignment(btnContinue2, Pos.TOP_RIGHT);
-        layout5.setAlignment(button7, Pos.TOP_LEFT);
-        layout5.setAlignment(button8, Pos.TOP_CENTER);
-        layout5.setAlignment(button9, Pos.TOP_RIGHT);
-        layout5.setAlignment(btnReturn5, Pos.TOP_LEFT);
-        layout5.setAlignment(help3, Pos.TOP_LEFT);
-
+        Layout_Askisi2_prosthesi.setAlignment(Number61_Askisi2_prosthesi, Pos.TOP_LEFT);
+        Layout_Askisi2_prosthesi.setAlignment(Number77_Askisi2_Prosthesi, Pos.TOP_CENTER);
+        Layout_Askisi2_prosthesi.setAlignment(Number55_Askisi2_prosthesi, Pos.TOP_RIGHT);
+        Layout_Askisi2_prosthesi.setAlignment(Return_Askisi2_prosthesi, Pos.TOP_LEFT);
+        Layout_Askisi2_prosthesi.setAlignment(help_Askisi2_prosthesi, Pos.TOP_LEFT);
+        Layout_Askisi2_prosthesi_Solution.setAlignment(Return_Askisi2_prosthesi_Solution, Pos.TOP_LEFT);
+        Layout_Askisi2_prosthesi_Solution.setAlignment(Continue_Askisi2_prosthesi, Pos.TOP_RIGHT);
+        Layout_Askisi3_prosthesi.setAlignment(Number5_Askisi3_prosthesi, Pos.TOP_LEFT);
+        Layout_Askisi3_prosthesi.setAlignment(Number9_Askisi3_prosthesi, Pos.TOP_CENTER);
+        Layout_Askisi3_prosthesi.setAlignment(Number7_Askisi3_prosthesi, Pos.TOP_RIGHT);
+        Layout_Askisi3_prosthesi.setAlignment(help_Askisi3_prosthesi, Pos.TOP_LEFT);
+        Layout_Askisi3_prosthesi.setAlignment(Return_Askisi3_prosthesi, Pos.TOP_LEFT);
+        Layout_Askisi3_prosthesi_Solution.setAlignment(Return_Askisi3_prosthesi_Solution, Pos.TOP_LEFT);
+        Layout_Askisi3_prosthesi_Solution.setAlignment(Continue_Askisi3_prosthesi, Pos.TOP_RIGHT);
+        Layout_Askisi4_prosthesi.setAlignment(Number65_Askisi4_prosthesi, Pos.TOP_LEFT);
+        Layout_Askisi4_prosthesi.setAlignment(Number49_Askisi4_prosthesi, Pos.TOP_CENTER);
+        Layout_Askisi4_prosthesi.setAlignment(Number70_Askisi4_prosthesi, Pos.TOP_RIGHT);
+        Layout_Askisi4_prosthesi.setAlignment(Return_Askisi4_prosthesi, Pos.TOP_LEFT);
+        Layout_Askisi4_prosthesi.setAlignment(help_Askisi4_prosthesi, Pos.TOP_LEFT);
+        Layout_Askisi4_prosthesi_Solution.setAlignment(Return_Askisi4_prosthesi_Solution, Pos.TOP_CENTER);
+        
         btnReturnMine.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -673,7 +711,7 @@ public class MathsFX extends Application {
             @Override
             public void handle(ActionEvent event) {
                 FadeTransition ft = new FadeTransition(Duration.millis(1000));
-                ft.setNode(layout);
+                ft.setNode(Layout_Askisi2_prosthesi);
                 ft.setFromValue(0);
                 ft.setToValue(1);
                 ft.play();
