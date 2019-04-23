@@ -115,20 +115,12 @@ public class MathsFX extends Application {
     private Text text4 = new CreateTextForNumbers(750, 370, "=", Color.RED, 70);
 
     //Αλεξ
-    //Button button1 = new Button();
-    //Button Number77_Askisi2_Prosthesi = new Button();
-    //Button Number55_Askisi2_prosthesi = new Button();
     Button help_Askisi2_prosthesi = new CreateHelpButton(170, 0);
-//    Button btnReturn = new Button("         Επιστροφή         ");
     Button Continue_Askisi2_prosthesi = new Button("         Συνέχεια ->        ");
     Button Continue_Askisi3_prosthesi = new Button("         Συνέχεια ->         ");
 
     ImageView Askisi1_prosthesi = new ImageView();
-   // Image Number61Image = new Image(getClass().getResourceAsStream("/Number_61.jpg"), 60, 60, false, false);
     Image Askisi1_prosthesi_Image = new Image(getClass().getResourceAsStream("/Askisi_1.png"));
-    //Image Number77Image = new Image(getClass().getResourceAsStream("/Number_77.jpg"), 60, 60, false, false);
-    //Image Number55Image = new Image(getClass().getResourceAsStream("/Number_55.jpg"), 60, 60, false, false);
-    //Image HelpImage = new Image(getClass().getResourceAsStream("/info2.jpg"), 20, 20, false, false);
     Image ScaleImage = new Image(getClass().getResourceAsStream("/Scale.jpg"));
     ImageView Scale = new ImageView();
     Image Help3Image1 = new Image(getClass().getResourceAsStream("/Dekada_Ask3.png"));
@@ -138,28 +130,19 @@ public class MathsFX extends Application {
     ImageView Help3_1 = new ImageView();
     ImageView Help3_2 = new ImageView();
 
-    //Image Number5Image = new Image(getClass().getResourceAsStream("/Number_5.jpg"), 60, 60, false, false);
-    //Image Number7Image = new Image(getClass().getResourceAsStream("/Number_7.jpg"), 60, 60, false, false);
-    //Image Number9Image = new Image(getClass().getResourceAsStream("/Number_9.jpg"), 60, 60, false, false);
     Image Askisi2_prosthesi_Image = new Image(getClass().getResourceAsStream("/Askisi_2.png"));
     ImageView Askisi2_prosthesi = new ImageView();
     Image Askisi2_prosthesi_Solution_Image = new Image(getClass().getResourceAsStream("/Askisi_2_Solution.jpg"));
     ImageView Askisi2_prosthesi_Solution = new ImageView();
 
-    //Button Number5_Askisi3_prosthesi = new Button();
-    //Button Number9_Askisi3_prosthesi = new Button();
-    //Button Number7_Askisi3_prosthesi = new Button();
+
     Button help_Askisi3_prosthesi = new CreateHelpButton(170, 0);
 
-    //Image Number70Image = new Image(getClass().getResourceAsStream("/Number_70(cube).png"), 146, 133, false, false);
-    //Image Number65Image = new Image(getClass().getResourceAsStream("/Number_65(cube).png"), 146, 133, false, false);
-    //Image Number49Image = new Image(getClass().getResourceAsStream("/Number_49(cube).png"), 146, 133, false, false);
+
     Image Askisi3_prosthesi_Image = new Image(getClass().getResourceAsStream("/Askisi_3.png"));
     ImageView Askisi3_prosthesi = new ImageView();
 
-    //Button Number65_Askisi4_prosthesi = new Button();
-    //Button Number49_Askisi4_prosthesi = new Button();
-    //Button Number70_Askisi4_prosthesi = new Button();
+
     Button help_Askisi4_prosthesi = new CreateHelpButton(170, 0);
     Image Askisi3_prosthesi_Image_Solution = new Image(getClass().getResourceAsStream("/Askisi_3_Solution.png"));
     ImageView Askisi3_prosthesi_Solution = new ImageView();
@@ -373,83 +356,6 @@ public class MathsFX extends Application {
         //Askisi4 Solution
         Askisi3_prosthesi_Solution = new ImageView(Askisi3_prosthesi_Image_Solution);
         
-        /*Number 77 button (Correct Button)
-        Number77_Askisi2_Prosthesi = new Button();
-        Number77_Askisi2_Prosthesi.setGraphic(new ImageView(Number77Image));
-        Number77_Askisi2_Prosthesi.setTranslateX(10);
-        Number77_Askisi2_Prosthesi.setTranslateY(20);*/
-
-        //Number 61 button
-       /* button1 = new Button();
-        button1.setGraphic(new ImageView(Number61Image));
-        button1.setTranslateX(230);
-        button1.setTranslateY(20);*/
-
-        /*Number 55 button
-        Number55_Askisi2_prosthesi = new Button();
-        Number55_Askisi2_prosthesi.setGraphic(new ImageView(Number55Image));
-        Number55_Askisi2_prosthesi.setTranslateX(-230);
-        Number55_Askisi2_prosthesi.setTranslateY(20);*/
-
-        /*Number 5 button (2nd Exercise)
-        Number5_Askisi3_prosthesi = new Button();
-        Number5_Askisi3_prosthesi.setGraphic(new ImageView(Number5Image));
-        Number5_Askisi3_prosthesi.setTranslateX(230);
-        Number5_Askisi3_prosthesi.setTranslateY(20);*/
-
-        /*Number 9 button (2nd Exercise)
-        Number9_Askisi3_prosthesi = new Button();
-        Number9_Askisi3_prosthesi.setGraphic(new ImageView(Number9Image));
-        Number9_Askisi3_prosthesi.setTranslateX(10);
-        Number9_Askisi3_prosthesi.setTranslateY(20);*/
-
-        /*Number 7 button (2nd Exercise)
-        Number7_Askisi3_prosthesi = new Button();
-        Number7_Askisi3_prosthesi.setGraphic(new ImageView(Number7Image));
-        Number7_Askisi3_prosthesi.setTranslateX(-230);
-        Number7_Askisi3_prosthesi.setTranslateY(20);*/
-
-        /*Help Button
-        help_Askisi2_prosthesi = new Button();
-        help_Askisi2_prosthesi.setGraphic(new ImageView(HelpImage));
-        help_Askisi2_prosthesi.setTranslateX(170);
-        help_Askisi2_prosthesi.setTranslateY(0);*/
-
-        /*Help Button (2nd Exercise)
-        help_Askisi3_prosthesi = new Button();
-        help_Askisi3_prosthesi.setGraphic(new ImageView(HelpImage));
-        help_Askisi3_prosthesi.setTranslateX(170);
-        help_Askisi3_prosthesi.setTranslateY(0);*/
-
-        /*Help Button (3rd Exercise)
-        help_Askisi4_prosthesi = new Button();
-        help_Askisi4_prosthesi.setGraphic(new ImageView(HelpImage));
-        help_Askisi4_prosthesi.setTranslateX(170);
-        help_Askisi4_prosthesi.setTranslateY(0);*/
-
-        /*Number 65 Button (3rd Exercise)
-        Number65_Askisi4_prosthesi = new Button();
-        Number65_Askisi4_prosthesi.setGraphic(new ImageView(Number65Image));
-        Number65_Askisi4_prosthesi.setMinHeight(133);
-        Number65_Askisi4_prosthesi.setMinWidth(146);
-        Number65_Askisi4_prosthesi.setTranslateX(230);
-        Number65_Askisi4_prosthesi.setTranslateY(30);*/
-
-        /*Number 49 Button (3rd Exercise)
-        Number49_Askisi4_prosthesi = new Button();
-        Number49_Askisi4_prosthesi.setMinHeight(133);
-        Number49_Askisi4_prosthesi.setMinWidth(146);
-        Number49_Askisi4_prosthesi.setGraphic(new ImageView(Number49Image));
-        Number49_Askisi4_prosthesi.setTranslateX(10);
-        Number49_Askisi4_prosthesi.setTranslateY(30);*/
-
-        /*Number 70 Button (3rd Exercise)
-        Number70_Askisi4_prosthesi = new Button();
-        Number70_Askisi4_prosthesi.setGraphic(new ImageView(Number70Image));
-        Number70_Askisi4_prosthesi.setMinHeight(133);
-        Number70_Askisi4_prosthesi.setMinWidth(146);
-        Number70_Askisi4_prosthesi.setTranslateX(-230);
-        Number70_Askisi4_prosthesi.setTranslateY(30);*/
 
         StackPane Layout_Askisi2_prosthesi = new StackPane();
         StackPane Layout_Askisi2_prosthesi_Solution = new StackPane();
@@ -458,12 +364,6 @@ public class MathsFX extends Application {
         StackPane Layout_Askisi4_prosthesi = new StackPane();
         StackPane Layout_Askisi4_prosthesi_Solution = new StackPane();
         
-        //CSS for Eπιστροφη button
-        /*btnReturn.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
-        Return_Askisi2_prosthesi_Solution.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
-        Return_Askisi3_prosthesi.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
-        Return_Askisi3_prosthesi_Solution.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());
-        Return_Askisi4_prosthesi.getStylesheets().add(getClass().getResource("btnBack.css").toExternalForm());*/
         //CSS for Συνέχεια button
         Continue_Askisi2_prosthesi.getStylesheets().add(getClass().getResource("btnAnswers.css").toExternalForm());
         Continue_Askisi3_prosthesi.getStylesheets().add(getClass().getResource("btnAnswers.css").toExternalForm());
