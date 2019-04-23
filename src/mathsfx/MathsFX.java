@@ -352,6 +352,8 @@ public class MathsFX extends Application {
 
         //Askisi2 Solution
         Askisi2_prosthesi_Solution = new ImageView(Askisi2_prosthesi_Solution_Image);
+        Continue_Askisi2_prosthesi.setSkin(new MyButtonSkin(Continue_Askisi2_prosthesi));
+        Continue_Askisi3_prosthesi.setSkin(new MyButtonSkin(Continue_Askisi3_prosthesi));
 
         //Askisi4 Solution
         Askisi3_prosthesi_Solution = new ImageView(Askisi3_prosthesi_Image_Solution);
