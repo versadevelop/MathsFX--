@@ -35,6 +35,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
@@ -88,8 +89,8 @@ public class MathsFX extends Application {
     private Button Return_Askisi4_prosthesi = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button btnReturn6 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button btnNext = new CreateReturnButton("         Επόμενη ->        ", 975, 670);
-    private Button Number61_Askisi2_prosthesi = new CreateButtonsAdd("/Number_61.jpg",230,20); 
-    private Button Number77_Askisi2_Prosthesi = new CreateButtonsAdd("/Number_77.jpg", 10 , 20);
+    private Button Number61_Askisi2_prosthesi = new CreateButtonsAdd("/Number_61.jpg", 230, 20);
+    private Button Number77_Askisi2_Prosthesi = new CreateButtonsAdd("/Number_77.jpg", 10, 20);
     private Button Number55_Askisi2_prosthesi = new CreateButtonsAdd("/Number_55.jpg", -230, 20);
     private Button Number5_Askisi3_prosthesi = new CreateButtonsAdd("/Number_5.jpg", 230, 20);
     private Button Number9_Askisi3_prosthesi = new CreateButtonsAdd("/Number_9.jpg", 10, 20);
@@ -137,16 +138,14 @@ public class MathsFX extends Application {
 
     Button help_Askisi3_prosthesi = new CreateHelpButton(170, 0);
 
-
     Image Askisi3_prosthesi_Image = new Image(getClass().getResourceAsStream("/Askisi_3.png"));
     ImageView Askisi3_prosthesi = new ImageView();
-
 
     Button help_Askisi4_prosthesi = new CreateHelpButton(170, 0);
     Image Askisi3_prosthesi_Image_Solution = new Image(getClass().getResourceAsStream("/Askisi_3_Solution.png"));
     ImageView Askisi3_prosthesi_Solution = new ImageView();
     Button Return_Askisi4_prosthesi_Solution = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
-    
+
     Image Askisi1_afairesi_Image = new Image(getClass().getResourceAsStream("/Askisi1_afairesi.png"));
     ImageView Askisi1_afairesi = new ImageView(Askisi1_afairesi_Image);
     private Button Askisi1_afairesi_choice1 = new CreateButtonsAddWithMinWidthAndSize("/Askisi1_afairesi_epilogi1.png", 230, 30, 89, 179, 179, 89);
@@ -154,12 +153,12 @@ public class MathsFX extends Application {
     private Button Askisi1_afairesi_choice3 = new CreateButtonsAddWithMinWidthAndSize("/Askisi1_afairesi_epilogi3.png", -230, 30, 82, 151, 151, 82);
     private Button btnReturn_Askisi1_afairesi = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
     Button help_Askisi1_afairesi = new CreateHelpButton(160, 0);
-    
+
     Image Askisi1_afairesi_Solution_Image = new Image(getClass().getResourceAsStream("/Askisi1_afairesi_Solution.png"));
     ImageView Askisi1_afairesi_Solution = new ImageView(Askisi1_afairesi_Solution_Image);
     private Button btnReturn_Askisi1_afairesi_Solution = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
     Button Continue_Askisi1_afairesi = new ButtonForContinue("         Συνέχεια ->         ");
-    
+
     Image Askisi2_afairesi_Image = new Image(getClass().getResourceAsStream("/Askisi2_afairesi.png"));
     ImageView Askisi2_afairesi = new ImageView(Askisi2_afairesi_Image);
     private Button Askisi2_afairesi_choice1 = new CreateButtonsAddWithMinWidthAndSize("/Askisi2_afairesi_epilogi1.png", 230, 30, 151, 200, 200, 151);
@@ -167,12 +166,12 @@ public class MathsFX extends Application {
     private Button Askisi2_afairesi_choice3 = new CreateButtonsAddWithMinWidthAndSize("/Askisi2_afairesi_epilogi3.png", -230, 30, 151, 200, 200, 151);
     private Button btnReturn_Askisi2_afairesi = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
     Button help_Askisi2_afairesi = new CreateHelpButton(160, 0);
-    
+
     Image Askisi2_afairesi_Solution_Image = new Image(getClass().getResourceAsStream("/Askisi2_afairesi_Solution.png"));
     ImageView Askisi2_afairesi_Solution = new ImageView(Askisi2_afairesi_Solution_Image);
     private Button btnReturn_Askisi2_afairesi_Solution = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
-    Button Continue_Askisi2_afairesi = new ButtonForContinue("         Συνέχεια ->         ");        
-    
+    Button Continue_Askisi2_afairesi = new ButtonForContinue("         Συνέχεια ->         ");
+
     Image Askisi3_afairesi_Image = new Image(getClass().getResourceAsStream("/Askisi3_afairesi.png"));
     ImageView Askisi3_afairesi = new ImageView(Askisi3_afairesi_Image);
     private Button Askisi3_afairesi_choice1 = new CreateButtonsAddWithMinWidthAndSize("/Askisi3_afairesi_epilogi1.png", 180, 40, 150, 250, 250, 150);
@@ -180,12 +179,12 @@ public class MathsFX extends Application {
     private Button Askisi3_afairesi_choice3 = new CreateButtonsAddWithMinWidthAndSize("/Askisi3_afairesi_epilogi3.png", -180, 40, 150, 200, 250, 150);
     private Button btnReturn_Askisi3_afairesi = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
     Button help_Askisi3_afairesi = new CreateHelpButton(160, 0);
-    
+
     Image Askisi3_afairesi_Solution_Image = new Image(getClass().getResourceAsStream("/Askisi3_afairesi_Solution.png"));
     ImageView Askisi3_afairesi_Solution = new ImageView(Askisi3_afairesi_Solution_Image);
     private Button btnReturn_Askisi3_afairesi_Solution = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
-    Button Continue_Askisi3_afairesi = new ButtonForContinue("         Συνέχεια ->         ");        
-    
+    Button Continue_Askisi3_afairesi = new ButtonForContinue("         Συνέχεια ->         ");
+
     Image Askisi4_afairesi_Image = new Image(getClass().getResourceAsStream("/Askisi4_afairesi.png"));
     ImageView Askisi4_afairesi = new ImageView(Askisi4_afairesi_Image);
     private Button Askisi4_afairesi_choice1 = new CreateButtonsAddWithMinWidthAndSize("/Askisi4_afairesi_epilogi1.png", 230, 30, 180, 180, 180, 180);
@@ -193,11 +192,11 @@ public class MathsFX extends Application {
     private Button Askisi4_afairesi_choice3 = new CreateButtonsAddWithMinWidthAndSize("/Askisi4_afairesi_epilogi3.png", -230, 30, 180, 180, 180, 180);
     private Button btnReturn_Askisi4_afairesi = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
     Button help_Askisi4_afairesi = new CreateHelpButton(160, 0);
-    
+
     Image Askisi4_afairesi_Solution_Image = new Image(getClass().getResourceAsStream("/Askisi4_afairesi_Solution.png"));
     ImageView Askisi4_afairesi_Solution = new ImageView(Askisi4_afairesi_Solution_Image);
     private Button btnReturn_Askisi4_afairesi_Solution = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
-        
+
     //SceneAle scene2, scene3, scene4, scene5;
     Stage Window;
 
@@ -331,6 +330,12 @@ public class MathsFX extends Application {
         });
     }
 
+    public void PlaySound() {
+        AudioClip sEffect = new AudioClip(this.getClass().getResource("clap.mp3").toExternalForm());
+        sEffect.setVolume(0.35);
+        sEffect.play();
+    }
+
     private Text t = new Text("Μπράβο μικρέ");
 
     @Override
@@ -405,19 +410,19 @@ public class MathsFX extends Application {
 
         //Askisi4 Solution
         Askisi3_prosthesi_Solution = new ImageView(Askisi3_prosthesi_Image_Solution);
-        
+
         //Askisi2 sub help
         Image Askisi2_afairesi_help_image = new Image("/Askisi2_afairesi_help.png");
         ImageView Askisi2_afairesi_help = new ImageView(Askisi2_afairesi_help_image);
-        
+
         //Askisi3 sub help
         Image Askisi3_afairesi_help_image = new Image("/Askisi3_afairesi_help.png");
         ImageView Askisi3_afairesi_help = new ImageView(Askisi3_afairesi_help_image);
-        
+
         //Askisi4 sub help
         Image Askisi4_afairesi_help_image = new Image("/Askisi4_afairesi_help.png");
         ImageView Askisi4_afairesi_help = new ImageView(Askisi4_afairesi_help_image);
-        
+
         StackPane Layout_Askisi2_prosthesi = new StackPane();
         StackPane Layout_Askisi2_prosthesi_Solution = new StackPane();
         StackPane Layout_Askisi3_prosthesi = new StackPane();
@@ -432,14 +437,14 @@ public class MathsFX extends Application {
         StackPane Layout_Askisi3_afairesi_Solution = new StackPane();
         StackPane Layout_Askisi4_afairesi = new StackPane();
         StackPane Layout_Askisi4_afairesi_Solution = new StackPane();
-        
+
         Layout_Askisi2_prosthesi.getChildren().addAll(Askisi1_prosthesi, Number61_Askisi2_prosthesi, Number77_Askisi2_Prosthesi, Number55_Askisi2_prosthesi, Return_Askisi2_prosthesi, help_Askisi2_prosthesi);
         Layout_Askisi2_prosthesi_Solution.getChildren().addAll(ScaleSolution, Return_Askisi2_prosthesi_Solution, Continue_Askisi2_prosthesi);
         Layout_Askisi3_prosthesi.getChildren().addAll(Askisi2_prosthesi, Number5_Askisi3_prosthesi, Number9_Askisi3_prosthesi, Number7_Askisi3_prosthesi, Return_Askisi3_prosthesi, help_Askisi3_prosthesi);
         Layout_Askisi3_prosthesi_Solution.getChildren().addAll(Askisi2_prosthesi_Solution, Return_Askisi3_prosthesi_Solution, Continue_Askisi3_prosthesi);
         Layout_Askisi4_prosthesi.getChildren().addAll(Askisi3_prosthesi, Number65_Askisi4_prosthesi, Number49_Askisi4_prosthesi, Number70_Askisi4_prosthesi, help_Askisi4_prosthesi, Return_Askisi4_prosthesi);
         Layout_Askisi4_prosthesi_Solution.getChildren().addAll(Askisi3_prosthesi_Solution, Return_Askisi4_prosthesi_Solution);
-        
+
         Layout_Askisi1_afairesi.getChildren().addAll(Askisi1_afairesi, Askisi1_afairesi_choice1, Askisi1_afairesi_choice2, Askisi1_afairesi_choice3, btnReturn_Askisi1_afairesi, help_Askisi1_afairesi);
         Layout_Askisi1_afairesi_Solution.getChildren().addAll(Askisi1_afairesi_Solution, btnReturn_Askisi1_afairesi_Solution, Continue_Askisi1_afairesi);
         Layout_Askisi2_afairesi.getChildren().addAll(Askisi2_afairesi, Askisi2_afairesi_choice1, Askisi2_afairesi_choice2, Askisi2_afairesi_choice3, btnReturn_Askisi2_afairesi, help_Askisi2_afairesi);
@@ -448,14 +453,14 @@ public class MathsFX extends Application {
         Layout_Askisi3_afairesi_Solution.getChildren().addAll(Askisi3_afairesi_Solution, btnReturn_Askisi3_afairesi_Solution, Continue_Askisi3_afairesi);
         Layout_Askisi4_afairesi.getChildren().addAll(Askisi4_afairesi, Askisi4_afairesi_choice1, Askisi4_afairesi_choice2, Askisi4_afairesi_choice3, btnReturn_Askisi4_afairesi, help_Askisi4_afairesi);
         Layout_Askisi4_afairesi_Solution.getChildren().addAll(Askisi4_afairesi_Solution, btnReturn_Askisi4_afairesi_Solution);
-        
+
         Scene sceneAddFirst = new Scene(Layout_Askisi2_prosthesi, 1164, 365);
         Scene sceneAddFirstCorrect = new Scene(Layout_Askisi2_prosthesi_Solution, 1164, 365);
         Scene sceneAddSecond = new Scene(Layout_Askisi3_prosthesi, 1164, 365);
         Scene sceneAddSecondCorrect = new Scene(Layout_Askisi3_prosthesi_Solution, 1164, 365);
         Scene sceneAddThird = new Scene(Layout_Askisi4_prosthesi, 1164, 600);
         Scene sceneAddThirdCorrect = new Scene(Layout_Askisi4_prosthesi_Solution, 1164, 600);
-        
+
         Scene sceneSubFirst = new Scene(Layout_Askisi1_afairesi, 1164, 500);
         Scene sceneSubFirstCorrect = new Scene(Layout_Askisi1_afairesi_Solution, 1164, 500);
         Scene sceneSubSecond = new Scene(Layout_Askisi2_afairesi, 1164, 500);
@@ -463,21 +468,78 @@ public class MathsFX extends Application {
         Scene sceneSubThird = new Scene(Layout_Askisi3_afairesi, 1164, 500);
         Scene sceneSubThirdCorrect = new Scene(Layout_Askisi3_afairesi_Solution, 1164, 500);
         Scene sceneSubFourth = new Scene(Layout_Askisi4_afairesi, 1164, 500);
-        Scene sceneSubFourthCorrect = new Scene (Layout_Askisi4_afairesi_Solution, 1164, 500);
-        
+        Scene sceneSubFourthCorrect = new Scene(Layout_Askisi4_afairesi_Solution, 1164, 500);
+
         Number61_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
         Number55_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
         help_Askisi2_prosthesi.setOnAction(e -> Help.display("Βοήθεια", Scale));
-        Number77_Askisi2_Prosthesi.setOnAction(e -> Window.setScene(sceneAddFirstCorrect));
+        Number77_Askisi2_Prosthesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi2_afairesi_Solution);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                PlaySound();
+                Window.setScene(sceneAddFirstCorrect);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
         Number9_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
         Number5_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
         help_Askisi3_prosthesi.setOnAction(e -> Help2.display("Βοήθεια", "Το κάθε δάχτυλο είναι μια μονάδα!"));
-        Number7_Askisi3_prosthesi.setOnAction(e -> Window.setScene(sceneAddSecondCorrect));
+        Number7_Askisi3_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi2_afairesi_Solution);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                PlaySound();
+                Window.setScene(sceneAddSecondCorrect);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
         Number49_Askisi4_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
         Number70_Askisi4_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        Number65_Askisi4_prosthesi.setOnAction(e -> Window.setScene(sceneAddThirdCorrect));
+        Number65_Askisi4_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi2_afairesi_Solution);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                PlaySound();
+                Window.setScene(sceneAddThirdCorrect);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
         help_Askisi4_prosthesi.setOnAction(e -> Help3.display("Βοήθεια", Help3_1, Help3_2));
-        
+
         Askisi1_afairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
         Askisi1_afairesi_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
         help_Askisi1_afairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", "Το κάθε παράθυρο χωράει 3 άτομα!"));
@@ -490,7 +552,7 @@ public class MathsFX extends Application {
         Askisi4_afairesi_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
         Askisi4_afairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
         help_Askisi4_afairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi4_afairesi_help));
-        
+
         Return_Askisi4_prosthesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -567,7 +629,7 @@ public class MathsFX extends Application {
                 });
             }
         });
-        
+
         Return_Askisi2_prosthesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -671,6 +733,7 @@ public class MathsFX extends Application {
                 ft.setFromValue(0);
                 ft.setToValue(1);
                 ft.play();
+                PlaySound();
                 primaryStage.setScene(sceneSubFirstCorrect);
                 rootAdd.getChildren().removeAll(t, btnNext);
                 ft.setOnFinished(new EventHandler<ActionEvent>() {
@@ -728,6 +791,7 @@ public class MathsFX extends Application {
                 ft.setFromValue(0);
                 ft.setToValue(1);
                 ft.play();
+                PlaySound();
                 primaryStage.setScene(sceneSubSecondCorrect);
                 rootAdd.getChildren().removeAll(t, btnNext);
                 ft.setOnFinished(new EventHandler<ActionEvent>() {
@@ -823,6 +887,7 @@ public class MathsFX extends Application {
                 ft.setFromValue(0);
                 ft.setToValue(1);
                 ft.play();
+                PlaySound();
                 primaryStage.setScene(sceneSubThirdCorrect);
                 rootAdd.getChildren().removeAll(t, btnNext);
                 ft.setOnFinished(new EventHandler<ActionEvent>() {
@@ -899,6 +964,7 @@ public class MathsFX extends Application {
                 ft.setFromValue(0);
                 ft.setToValue(1);
                 ft.play();
+                PlaySound();
                 primaryStage.setScene(sceneSubFourthCorrect);
                 rootAdd.getChildren().removeAll(t, btnNext);
                 ft.setOnFinished(new EventHandler<ActionEvent>() {
@@ -929,7 +995,7 @@ public class MathsFX extends Application {
                 });
             }
         });
-        
+
         Layout_Askisi2_prosthesi.setAlignment(Number61_Askisi2_prosthesi, Pos.TOP_LEFT);
         Layout_Askisi2_prosthesi.setAlignment(Number77_Askisi2_Prosthesi, Pos.TOP_CENTER);
         Layout_Askisi2_prosthesi.setAlignment(Number55_Askisi2_prosthesi, Pos.TOP_RIGHT);
@@ -950,7 +1016,7 @@ public class MathsFX extends Application {
         Layout_Askisi4_prosthesi.setAlignment(Return_Askisi4_prosthesi, Pos.TOP_LEFT);
         Layout_Askisi4_prosthesi.setAlignment(help_Askisi4_prosthesi, Pos.TOP_LEFT);
         Layout_Askisi4_prosthesi_Solution.setAlignment(Return_Askisi4_prosthesi_Solution, Pos.TOP_CENTER);
-        
+
         Layout_Askisi1_afairesi.setAlignment(Askisi1_afairesi_choice1, Pos.TOP_LEFT);
         Layout_Askisi1_afairesi.setAlignment(Askisi1_afairesi_choice2, Pos.TOP_CENTER);
         Layout_Askisi1_afairesi.setAlignment(Askisi1_afairesi_choice3, Pos.TOP_RIGHT);
@@ -978,7 +1044,7 @@ public class MathsFX extends Application {
         Layout_Askisi4_afairesi.setAlignment(btnReturn_Askisi4_afairesi, Pos.TOP_LEFT);
         Layout_Askisi4_afairesi.setAlignment(help_Askisi4_afairesi, Pos.TOP_LEFT);
         Layout_Askisi4_afairesi_Solution.setAlignment(btnReturn_Askisi4_afairesi_Solution, Pos.TOP_CENTER);
-        
+
         btnReturnMine.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -1069,6 +1135,8 @@ public class MathsFX extends Application {
         btnAddCorrentAnswerOnFirst.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                AudioClip sEffect = new AudioClip(this.getClass().getResource("clap.mp3").toExternalForm());
+                sEffect.setVolume(0.35);
                 Path path = new Path();
                 path.getElements().add(new MoveTo(535, 370));
                 path.getElements().add(new CubicCurveTo(380, 0, 380, 120, 200, 120));
@@ -1080,6 +1148,7 @@ public class MathsFX extends Application {
                 pathTransition.setOrientation(PathTransition.OrientationType.NONE);
                 pathTransition.setCycleCount(1);
                 pathTransition.play();
+                sEffect.play();
 
                 pathTransition.setOnFinished(new EventHandler<ActionEvent>() {
                     @Override
