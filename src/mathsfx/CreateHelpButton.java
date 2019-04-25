@@ -16,7 +16,7 @@ import javafx.scene.image.ImageView;
 public class CreateHelpButton extends Button {
 
     public CreateHelpButton(double W,double Y) {
-        Image HelpImage = new Image(getClass().getResourceAsStream("/info2.jpg"), 20, 20, false, false);
+        Image HelpImage = new Image(getClass().getResourceAsStream("/info2.jpg"), 30, 30, false, false);
         setGraphic(new ImageView(HelpImage));
         setTranslateX(W);
         setTranslateY(Y);
