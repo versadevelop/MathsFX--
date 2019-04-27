@@ -11,11 +11,10 @@ import javafx.scene.control.Button;
  *
  * @author jelis
  */
-public class CreateButtonAnswers extends Button{
-    
-    public CreateButtonAnswers(String text,double W,double Y,double SW,double SY) {
+public class CreateButtonAnswersMultiply extends Button {
+      public CreateButtonAnswersMultiply(String text,double W,double Y,double SW,double SY) {
         super(text);
-        getStylesheets().add(getClass().getResource("btnAnswers.css").toExternalForm());
+        getStylesheets().add(getClass().getResource("btnMultiply.css").toExternalForm());
         setTranslateX(W);
         setTranslateY(Y);
         setScaleX(SW);

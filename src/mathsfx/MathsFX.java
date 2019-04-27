@@ -65,11 +65,13 @@ public class MathsFX extends Application {
     double lineY = HEIGHT / 3 + 50;
     private Pane root = new Pane();
     private Pane rootLearn = new Pane();
+    private Pane rootMultiply = new Pane();
     private Pane rootAdd = new Pane();
     private VBox menuBox = new VBox(-5);
     private Line line;
     Scene scene = new Scene(root, WIDTH, HEIGHT);
     Scene sceneLearn = new Scene(rootLearn, WIDTH, HEIGHT);
+    Scene sceneMultiply = new Scene(rootMultiply, WIDTH, HEIGHT);
     Scene sceneAdd = new Scene(rootAdd, WIDTH - 135, HEIGHT);
 
     //Buttons of MainMenu
@@ -82,6 +84,7 @@ public class MathsFX extends Application {
     private Button btnExit = new CreateButton("         Εξόδος          ", lineX + 10, lineY + 60, 0);
     private Button btnReturnMine = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
     private Button btnReturnOnAdd = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    private Button btnReturnOnMultiply = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button Return_Askisi2_prosthesi = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button Return_Askisi2_prosthesi_Solution = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button Return_Askisi3_prosthesi = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
@@ -90,6 +93,16 @@ public class MathsFX extends Application {
     private Button btnReturn6 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button btnNext = new CreateReturnButton("         Επόμενη ->        ", 975, 670);
     private Button Number61_Askisi2_prosthesi = new CreateButtonsAdd("/Number_61.jpg", 230, 20);
+    private Button btnMultiplySelect1 = new CreateButtonAnswersMultiply("1", 200, 350, 1.5, 1.5);
+    private Button btnMultiplySelect2 = new CreateButtonAnswersMultiply("2", 400, 350, 1.5, 1.5);
+    private Button btnMultiplySelect3 = new CreateButtonAnswersMultiply("3", 600, 350, 1.5, 1.5);
+    private Button btnMultiplySelect4 = new CreateButtonAnswersMultiply("4", 800, 350, 1.5, 1.5);
+    private Button btnMultiplySelect5 = new CreateButtonAnswersMultiply("5", 1000, 350, 1.5, 1.5);
+    private Button btnMultiplySelect6 = new CreateButtonAnswersMultiply("6", 300, 450, 1.5, 1.5);
+    private Button btnMultiplySelect7 = new CreateButtonAnswersMultiply("7", 500, 450, 1.5, 1.5);
+    private Button btnMultiplySelect8 = new CreateButtonAnswersMultiply("8", 700, 450, 1.5, 1.5);
+    private Button btnMultiplySelect9 = new CreateButtonAnswersMultiply("9", 900, 450, 1.5, 1.5);
+    private Button btnMultiplySelect10 = new CreateButtonAnswersMultiply("10", 600, 550, 1.5, 1.5);
     private Button Number77_Askisi2_Prosthesi = new CreateButtonsAdd("/Number_77.jpg", 10, 20);
     private Button Number55_Askisi2_prosthesi = new CreateButtonsAdd("/Number_55.jpg", -230, 20);
     private Button Number5_Askisi3_prosthesi = new CreateButtonsAdd("/Number_5.jpg", 230, 20);
@@ -105,9 +118,9 @@ public class MathsFX extends Application {
     private Button btnStartMultiVideo = new CreateButton("         Πολλαπλασιασμός         ", 680, 650, 0);
     private Button btnStartDivideVideo = new CreateButton("         Διαίρεση          ", 880, 650, 0);
     //Buttons for Answers
-    private Button btnAdd1 = new CreateButtonAnswers("30", 390, 450);
-    private Button btnAddCorrentAnswerOnFirst = new CreateButtonAnswers("27", 535, 450);
-    private Button btnAdd3 = new CreateButtonAnswers("18", 670, 450);
+    private Button btnAdd1 = new CreateButtonAnswers("30", 390, 450, 1, 1);
+    private Button btnAddCorrentAnswerOnFirst = new CreateButtonAnswers("27", 535, 450, 1, 1);
+    private Button btnAdd3 = new CreateButtonAnswers("18", 670, 450, 1, 1);
 
     //Texts For Numbers
     private Text text = new CreateTextForNumbers(390, 370, "15", Color.RED, 70);
@@ -353,6 +366,10 @@ public class MathsFX extends Application {
         imageView2.setFitWidth(WIDTH);
         imageView2.setFitHeight(HEIGHT);
 
+        ImageView imageView4 = new ImageView(new Image(getClass().getResource("test.png").toExternalForm()));
+        imageView2.setFitWidth(WIDTH);
+        imageView2.setFitHeight(HEIGHT);
+
         //Titles
         Title title = new Title("Μαθηματικά");
         title.setTranslateX(WIDTH / 2 - title.getTitleWidth() / 2);
@@ -364,9 +381,13 @@ public class MathsFX extends Application {
 
         Title titleLearn = new Title("Δίαλεξε την κατηγορία \n"
                 + "που επιθυμείς να μάθεις");
-
         titleLearn.setTranslateX(WIDTH / 4 - title.getTitleWidth() / 2.5);
         titleLearn.setTranslateY(HEIGHT / 3);
+        
+        Title titleMultiply = new Title("    Δίαλεξε την προπαίδεια \n"
+                + "που επιθυμείς να εξασκιθείς");
+        titleMultiply.setTranslateX(WIDTH / 5 - title.getTitleWidth() / 2.5);
+        titleMultiply.setTranslateY(HEIGHT / 5);
 
         t.setFill(Color.RED);
         t.setFont(new Font(50));
@@ -380,13 +401,16 @@ public class MathsFX extends Application {
         menuBox.setAlignment(Pos.CENTER);
         menuBox.setFillWidth(true);
 
-        //Button Actions
+        //Buttons on Video
         btnExit.setOnAction(e -> Platform.exit());
         btnStartAddVideo.setOnAction(e -> startAdd());
         btnStartMinusVideo.setOnAction(e -> startMinus());
         btnStartCompareVideo.setOnAction(e -> startCompare());
         btnStartMultiVideo.setOnAction(e -> startMulti());
         btnStartDivideVideo.setOnAction(e -> startDivide());
+
+        btnMultiplySelect1.setScaleX(1.5);
+        btnMultiplySelect1.setScaleY(1.5);
 
         //Αλεξ
         Askisi1_prosthesi = new ImageView(Askisi1_prosthesi_Image);
@@ -1099,6 +1123,36 @@ public class MathsFX extends Application {
                 primaryStage.setScene(sceneAdd);
             }
         });
+        btnMultiply.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+            }
+        });
+        btnReturnOnMultiply.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
         btnNext.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -1161,6 +1215,8 @@ public class MathsFX extends Application {
         });
 
         //Scene, Stages
+        rootMultiply.getChildren().addAll(imageView4, titleMultiply, btnReturnOnMultiply, btnMultiplySelect1, btnMultiplySelect2, btnMultiplySelect3, btnMultiplySelect4, btnMultiplySelect5,
+                btnMultiplySelect6, btnMultiplySelect7, btnMultiplySelect8, btnMultiplySelect9, btnMultiplySelect10);
         rootAdd.getChildren().addAll(imageView3, titleAdd, btnReturnOnAdd, text, text2, text3, text4, btnAdd1, btnAddCorrentAnswerOnFirst, btnAdd3);
         rootLearn.getChildren().addAll(imageView2, btnStartAddVideo, titleLearn, btnStartMinusVideo, btnStartCompareVideo, btnStartMultiVideo, btnStartDivideVideo, btnReturnMine);
         root.getChildren().addAll(imageView, title, menuBox, line);
