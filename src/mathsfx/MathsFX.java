@@ -385,7 +385,7 @@ public class MathsFX extends Application {
         titleLearn.setTranslateY(HEIGHT / 3);
         
         Title titleMultiply = new Title("    Δίαλεξε την προπαίδεια \n"
-                + "που επιθυμείς να εξασκιθείς");
+                + "που επιθυμείς να εξασκηθείς");
         titleMultiply.setTranslateX(WIDTH / 5 - title.getTitleWidth() / 2.5);
         titleMultiply.setTranslateY(HEIGHT / 5);
 
