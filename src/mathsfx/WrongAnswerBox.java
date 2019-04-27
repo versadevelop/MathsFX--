@@ -6,11 +6,13 @@
 package mathsfx;
 
 import static java.awt.SystemColor.window;
+import java.nio.file.Paths;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.AudioClip;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -24,6 +26,9 @@ class WrongAnswerBox {
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle(title);
         window.setMinWidth(250);
+        
+        AudioClip Sound = new AudioClip(Paths.get("src/Sad_clip.mp3").toUri().toString());
+        Sound.play(0.50);
         
         Label label = new Label();
         label.setText(message);

@@ -5,12 +5,14 @@
  */
 package mathsfx;
 
+import java.nio.file.Paths;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
+import javafx.scene.media.AudioClip;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -31,6 +33,8 @@ class Help_afairesi {
         closeButton.setOnAction(e -> window.close());
      
         StackPane layout = new StackPane();
+        AudioClip Sound = new AudioClip(Paths.get("src/Pop_clip.mp3").toUri().toString());
+        Sound.play(0.80);
         
         layout.getChildren().addAll(helping, closeButton);
         layout.setAlignment(closeButton, Pos.TOP_CENTER);
@@ -53,6 +57,9 @@ class Help_afairesi {
         Label label = new Label(message);
         StackPane layout = new StackPane();
         
+        AudioClip Sound = new AudioClip(Paths.get("src/Pop_clip.mp3").toUri().toString());
+        Sound.play(0.80);
+                
         layout.getChildren().addAll(label, closeButton);
         layout.setAlignment(closeButton, Pos.TOP_CENTER);
         
