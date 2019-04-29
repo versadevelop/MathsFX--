@@ -1776,7 +1776,6 @@ public class MathsFX extends Application {
                 });
             }
         });
-
         // Scenes for Multiply 1-10 and Handlers ------------------------------------------------------------------------------------------
         btnMultiplySelect1.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -1967,8 +1966,6 @@ public class MathsFX extends Application {
                 ft.setToValue(1);
                 ft.play();
                 primaryStage.setScene(sceneMultiply1Third);
-                counter();
-                titleMultiply1Final.setText("Βρήκες : " + Integer.toString(counter) + " στα 5");
             }
         });
         btnMultiplyFirstEx3Second.setOnAction(new EventHandler<ActionEvent>() {
@@ -1980,8 +1977,6 @@ public class MathsFX extends Application {
                 ft.setToValue(1);
                 ft.play();
                 primaryStage.setScene(sceneMultiply1Third);
-                counter();
-                titleMultiply1Final.setText("Βρήκες : " + Integer.toString(counter) + " στα 5");
             }
         });
         btnMultiplyFirstEx1Third.setOnAction(new EventHandler<ActionEvent>() {
@@ -2061,9 +2056,30 @@ public class MathsFX extends Application {
                 ft.setNode(rootMultiply1FinalPane);
                 ft.setFromValue(0);
                 ft.setToValue(1);
-                ft.play(); 
+                ft.play();
                 primaryStage.setScene(sceneMultiply1Final);
-                titleMultiply1Final.setText("Βρήκες : " + Integer.toString(counter) + " στα 5");
+                switch (counter) {
+                    case 1:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 5:
+                        titleMultiply1Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                }
             }
         });
         btnMultiplyFirstEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
@@ -2075,7 +2091,28 @@ public class MathsFX extends Application {
                 ft.setToValue(1);
                 ft.play();
                 primaryStage.setScene(sceneMultiply1Final);
-                titleMultiply1Final.setText("Βρήκες : " + Integer.toString(counter) + " στα 5");
+                switch (counter) {
+                    case 1:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 5:
+                        titleMultiply1Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                }
             }
         });
         btnMultiplyFirstEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
@@ -2087,11 +2124,35 @@ public class MathsFX extends Application {
                 ft.setToValue(1);
                 ft.play();
                 counter();
-                titleMultiply1Final.setText("Βρήκες : " + Integer.toString(counter) + " στα 5");
+
+                switch (counter) {
+                    case 1:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 5:
+                        titleMultiply1Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                }
+
                 primaryStage.setScene(sceneMultiply1Final);
 
             }
         });
+
         //Scene, Stages
         rootMultiply1FinalPane.getChildren().addAll(imageViewMultiply1Final, titleMultiply1Final, Return_Askisi1_multiply1Final);
         rootMultiply1.getChildren().addAll(imageViewMultiply1, titleMultiply1ExFirst, Return_Askisi1_multiply1, btnMultiplyFirstEx1, btnMultiplyFirstEx2, btnMultiplyFirstEx3);
