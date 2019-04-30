@@ -22,6 +22,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.event.EventType;
 import javafx.geometry.Pos;
+import javafx.scene.CacheHint;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -76,6 +77,71 @@ public class MathsFX extends Application {
     private Pane rootMultiply1Fifth = new Pane();
     private Pane rootMultiply1FinalPane = new Pane();
     //Multiply for 1 ends here
+    //Multiply for 2
+    private Pane rootMultiply2 = new Pane();
+    private Pane rootMultiply2Second = new Pane();
+    private Pane rootMultiply2Third = new Pane();
+    private Pane rootMultiply2Fourth = new Pane();
+    private Pane rootMultiply2Fifth = new Pane();
+    private Pane rootMultiply2Final = new Pane();
+    //Multiplay for 2 ends here
+    //Multiply for 3 
+    private Pane rootMultiply3 = new Pane();
+    private Pane rootMultiply3Second = new Pane();
+    private Pane rootMultiply3Third = new Pane();
+    private Pane rootMultiply3Fourth = new Pane();
+    private Pane rootMultiply3Fifth = new Pane();
+    private Pane rootMultiply3Final = new Pane();
+    //Multiply for 4
+    private Pane rootMultiply4 = new Pane();
+    private Pane rootMultiply4Second = new Pane();
+    private Pane rootMultiply4Third = new Pane();
+    private Pane rootMultiply4Fourth = new Pane();
+    private Pane rootMultiply4Fifth = new Pane();
+    private Pane rootMultiply4Final = new Pane();
+    //Multiply for 5
+    private Pane rootMultiply5 = new Pane();
+    private Pane rootMultiply5Second = new Pane();
+    private Pane rootMultiply5Third = new Pane();
+    private Pane rootMultiply5Fourth = new Pane();
+    private Pane rootMultiply5Fifth = new Pane();
+    private Pane rootMultiply5Final = new Pane();
+    //Multiply for 6
+    private Pane rootMultiply6 = new Pane();
+    private Pane rootMultiply6Second = new Pane();
+    private Pane rootMultiply6Third = new Pane();
+    private Pane rootMultiply6Fourth = new Pane();
+    private Pane rootMultiply6Fifth = new Pane();
+    private Pane rootMultiply6Final = new Pane();
+    //Multiply for 7
+    private Pane rootMultiply7 = new Pane();
+    private Pane rootMultiply7Second = new Pane();
+    private Pane rootMultiply7Third = new Pane();
+    private Pane rootMultiply7Fourth = new Pane();
+    private Pane rootMultiply7Fifth = new Pane();
+    private Pane rootMultiply7Final = new Pane();
+    //Multiply for 8
+    private Pane rootMultiply8 = new Pane();
+    private Pane rootMultiply8Second = new Pane();
+    private Pane rootMultiply8Third = new Pane();
+    private Pane rootMultiply8Fourth = new Pane();
+    private Pane rootMultiply8Fifth = new Pane();
+    private Pane rootMultiply8Final = new Pane();
+    //Multiply for 9
+    private Pane rootMultiply9 = new Pane();
+    private Pane rootMultiply9Second = new Pane();
+    private Pane rootMultiply9Third = new Pane();
+    private Pane rootMultiply9Fourth = new Pane();
+    private Pane rootMultiply9Fifth = new Pane();
+    private Pane rootMultiply9Final = new Pane();
+    //Multiply for 10
+    private Pane rootMultiply10 = new Pane();
+    private Pane rootMultiply10Second = new Pane();
+    private Pane rootMultiply10Third = new Pane();
+    private Pane rootMultiply10Fourth = new Pane();
+    private Pane rootMultiply10Fifth = new Pane();
+    private Pane rootMultiply10Final = new Pane();
+
     private Pane rootAdd = new Pane();
     private VBox menuBox = new VBox(-5);
     private Line line;
@@ -90,16 +156,80 @@ public class MathsFX extends Application {
     Scene sceneMultiply1Fifth = new Scene(rootMultiply1Fifth, WIDTH, HEIGHT);
     Scene sceneMultiply1Final = new Scene(rootMultiply1FinalPane, WIDTH, HEIGHT);
     //Multiply for 1 ends here
+    //Multiplay for 2 
+    Scene sceneMultiply2 = new Scene(rootMultiply2, WIDTH, HEIGHT);
+    Scene sceneMultiply2Second = new Scene(rootMultiply2Second, WIDTH, HEIGHT);
+    Scene sceneMultiply2Third = new Scene(rootMultiply2Third, WIDTH, HEIGHT);
+    Scene sceneMultiply2Fourth = new Scene(rootMultiply2Fourth, WIDTH, HEIGHT);
+    Scene sceneMultiply2Fifth = new Scene(rootMultiply2Fifth, WIDTH, HEIGHT);
+    Scene sceneMultiply2Final = new Scene(rootMultiply2Final, WIDTH, HEIGHT);
+    //Multiply for 3
+    Scene sceneMultiply3 = new Scene(rootMultiply3, WIDTH, HEIGHT);
+    Scene sceneMultiply3Second = new Scene(rootMultiply3Second, WIDTH, HEIGHT);
+    Scene sceneMultiply3Third = new Scene(rootMultiply3Third, WIDTH, HEIGHT);
+    Scene sceneMultiply3Fourth = new Scene(rootMultiply3Fourth, WIDTH, HEIGHT);
+    Scene sceneMultiply3Fifth = new Scene(rootMultiply3Fifth, WIDTH, HEIGHT);
+    Scene sceneMultiply3Final = new Scene(rootMultiply3Final, WIDTH, HEIGHT);
+    //Multiply for 4
+    Scene sceneMultiply4 = new Scene(rootMultiply4, WIDTH, HEIGHT);
+    Scene sceneMultiply4Second = new Scene(rootMultiply4Second, WIDTH, HEIGHT);
+    Scene sceneMultiply4Third = new Scene(rootMultiply4Third, WIDTH, HEIGHT);
+    Scene sceneMultiply4Fourth = new Scene(rootMultiply4Fourth, WIDTH, HEIGHT);
+    Scene sceneMultiply4Fifth = new Scene(rootMultiply4Fifth, WIDTH, HEIGHT);
+    Scene sceneMultiply4Final = new Scene(rootMultiply4Final, WIDTH, HEIGHT);
+    //Multiply for 5
+    Scene sceneMultiply5 = new Scene(rootMultiply5, WIDTH, HEIGHT);
+    Scene sceneMultiply5Second = new Scene(rootMultiply5Second, WIDTH, HEIGHT);
+    Scene sceneMultiply5Third = new Scene(rootMultiply5Third, WIDTH, HEIGHT);
+    Scene sceneMultiply5Fourth = new Scene(rootMultiply5Fourth, WIDTH, HEIGHT);
+    Scene sceneMultiply5Fifth = new Scene(rootMultiply5Fifth, WIDTH, HEIGHT);
+    Scene sceneMultiply5Final = new Scene(rootMultiply5Final, WIDTH, HEIGHT);
+    //Multiply for 6
+    Scene sceneMultiply6 = new Scene(rootMultiply6, WIDTH, HEIGHT);
+    Scene sceneMultiply6Second = new Scene(rootMultiply6Second, WIDTH, HEIGHT);
+    Scene sceneMultiply6Third = new Scene(rootMultiply6Third, WIDTH, HEIGHT);
+    Scene sceneMultiply6Fourth = new Scene(rootMultiply6Fourth, WIDTH, HEIGHT);
+    Scene sceneMultiply6Fifth = new Scene(rootMultiply6Fifth, WIDTH, HEIGHT);
+    Scene sceneMultiply6Final = new Scene(rootMultiply6Final, WIDTH, HEIGHT);
+    //Multiply for 7
+    Scene sceneMultiply7 = new Scene(rootMultiply7, WIDTH, HEIGHT);
+    Scene sceneMultiply7Second = new Scene(rootMultiply7Second, WIDTH, HEIGHT);
+    Scene sceneMultiply7Third = new Scene(rootMultiply7Third, WIDTH, HEIGHT);
+    Scene sceneMultiply7Fourth = new Scene(rootMultiply7Fourth, WIDTH, HEIGHT);
+    Scene sceneMultiply7Fifth = new Scene(rootMultiply7Fifth, WIDTH, HEIGHT);
+    Scene sceneMultiply7Final = new Scene(rootMultiply7Final, WIDTH, HEIGHT);
+    //Multiply for 8
+    Scene sceneMultiply8 = new Scene(rootMultiply8, WIDTH, HEIGHT);
+    Scene sceneMultiply8Second = new Scene(rootMultiply8Second, WIDTH, HEIGHT);
+    Scene sceneMultiply8Third = new Scene(rootMultiply8Third, WIDTH, HEIGHT);
+    Scene sceneMultiply8Fourth = new Scene(rootMultiply8Fourth, WIDTH, HEIGHT);
+    Scene sceneMultiply8Fifth = new Scene(rootMultiply8Fifth, WIDTH, HEIGHT);
+    Scene sceneMultiply8Final = new Scene(rootMultiply8Final, WIDTH, HEIGHT);
+    //Multiply for 9
+    Scene sceneMultiply9 = new Scene(rootMultiply9, WIDTH, HEIGHT);
+    Scene sceneMultiply9Second = new Scene(rootMultiply9Second, WIDTH, HEIGHT);
+    Scene sceneMultiply9Third = new Scene(rootMultiply9Third, WIDTH, HEIGHT);
+    Scene sceneMultiply9Fourth = new Scene(rootMultiply9Fourth, WIDTH, HEIGHT);
+    Scene sceneMultiply9Fifth = new Scene(rootMultiply9Fifth, WIDTH, HEIGHT);
+    Scene sceneMultiply9Final = new Scene(rootMultiply9Final, WIDTH, HEIGHT);
+    //Multiply for 10
+    Scene sceneMultiply10 = new Scene(rootMultiply10, WIDTH, HEIGHT);
+    Scene sceneMultiply10Second = new Scene(rootMultiply10Second, WIDTH, HEIGHT);
+    Scene sceneMultiply10Third = new Scene(rootMultiply10Third, WIDTH, HEIGHT);
+    Scene sceneMultiply10Fourth = new Scene(rootMultiply10Fourth, WIDTH, HEIGHT);
+    Scene sceneMultiply10Fifth = new Scene(rootMultiply10Fifth, WIDTH, HEIGHT);
+    Scene sceneMultiply10Final = new Scene(rootMultiply10Final, WIDTH, HEIGHT);
+
     Scene sceneAdd = new Scene(rootAdd, WIDTH - 135, HEIGHT);
 
     //Buttons of MainMenu
-    private Button btnLearn = new CreateButton("      Εκμάθηση         ", lineX + 10, lineY, 0);
-    private Button btnAdd = new CreateButton("       Πρόσθεση        ", lineX + 10, lineY + 10, 0);
-    private Button btnMinus = new CreateButton("       Αφαίρεση         ", lineX + 10, lineY + 20, 0);
-    private Button btnCompare = new CreateButton("        Σύγκριση         ", lineX + 10, lineY + 30, 0);
-    private Button btnMultiply = new CreateButton(" Πολλαπλασιασμός ", lineX + 10, lineY + 40, 0);
-    private Button btnDivide = new CreateButton("        Διαίρεση         ", lineX + 10, lineY + 50, 0);
-    private Button btnExit = new CreateButton("         Εξόδος          ", lineX + 10, lineY + 60, 0);
+    private Button btnLearn = new CreateButton("      Εκμάθηση         ", lineX + 10, lineY, -1);
+    private Button btnAdd = new CreateButton("       Πρόσθεση        ", lineX + 10, lineY + 10, -1);
+    private Button btnMinus = new CreateButton("       Αφαίρεση         ", lineX + 10, lineY + 20, -1);
+    private Button btnCompare = new CreateButton("        Σύγκριση         ", lineX + 10, lineY + 30, -1);
+    private Button btnMultiply = new CreateButton(" Πολλαπλασιασμός ", lineX + 10, lineY + 40, -1);
+    private Button btnDivide = new CreateButton("        Διαίρεση         ", lineX + 10, lineY + 50, -1);
+    private Button btnExit = new CreateButton("         Εξόδος          ", lineX + 10, lineY + 60, -1);
     private Button btnReturnMine = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
     private Button btnReturnOnAdd = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button btnReturnOnMultiply = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
@@ -132,23 +262,274 @@ public class MathsFX extends Application {
     private Button btnMultiplyFirstEx1Fifth = new CreateButtonAnswers("7", 390, 450, 1, 1);
     private Button btnMultiplyFirstEx2Fifth = new CreateButtonAnswers("3", 590, 450, 1, 1);
     private Button btnMultiplyFirstEx3Fifth = new CreateButtonAnswers("5", 790, 450, 1, 1);
-    //Multiply for 1 ends here
+
+    //Returns
     Button Return_Askisi1_multiply1 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     Button Return_Askisi1_multiply1Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     Button Return_Askisi1_multiply1Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     Button Return_Askisi1_multiply1Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     Button Return_Askisi1_multiply1Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     Button Return_Askisi1_multiply1Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    //Multiply for 1 ends here
 
+    //Multiply for 2
     private Button btnMultiplySelect2 = new CreateButtonAnswersMultiply("2", 400, 350, 1.5, 1.5);
+    private Button btnMultiplySecondEx1 = new CreateButtonAnswers("12", 390, 450, 1, 1);
+    private Button btnMultiplySecondEx2 = new CreateButtonAnswers("14", 590, 450, 1, 1);
+    private Button btnMultiplySecondEx3 = new CreateButtonAnswers("18", 790, 450, 1, 1);
+    //Second Ex
+    private Button btnMultiplySecondEx1Second = new CreateButtonAnswers("10", 390, 450, 1, 1);
+    private Button btnMultiplySecondEx2Second = new CreateButtonAnswers("16", 590, 450, 1, 1);
+    private Button btnMultiplySecondEx3Second = new CreateButtonAnswers("20", 790, 450, 1, 1);
+    //Third Ex
+    private Button btnMultiplySecondEx1Third = new CreateButtonAnswers("6", 390, 450, 1, 1);
+    private Button btnMultiplySecondEx2Third = new CreateButtonAnswers("8", 590, 450, 1, 1);
+    private Button btnMultiplySecondEx3Third = new CreateButtonAnswers("2", 790, 450, 1, 1);
+    //Fourth Ex
+    private Button btnMultiplySecondEx1Fourth = new CreateButtonAnswers("8", 390, 450, 1, 1);
+    private Button btnMultiplySecondEx2Fourth = new CreateButtonAnswers("12", 590, 450, 1, 1);
+    private Button btnMultiplySecondEx3Fourth = new CreateButtonAnswers("14", 790, 450, 1, 1);
+    //Fifth Ex
+    private Button btnMultiplySecondEx1Fifth = new CreateButtonAnswers("4", 390, 450, 1, 1);
+    private Button btnMultiplySecondEx2Fifth = new CreateButtonAnswers("6", 590, 450, 1, 1);
+    private Button btnMultiplySecondEx3Fifth = new CreateButtonAnswers("22", 790, 450, 1, 1);
+
+    //Returns
+    Button Return_Askisi1_multiply2 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply2Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply2Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply2Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply2Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply2Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    //Multiply for 2 ends here
+    //Multiply for 3
     private Button btnMultiplySelect3 = new CreateButtonAnswersMultiply("3", 600, 350, 1.5, 1.5);
+    private Button btnMultiplyThirdEx1 = new CreateButtonAnswers("9", 390, 450, 1, 1);
+    private Button btnMultiplyThirdEx2 = new CreateButtonAnswers("12", 590, 450, 1, 1);
+    private Button btnMultiplyThirdEx3 = new CreateButtonAnswers("15", 790, 450, 1, 1); //3rd Correct
+    //Second Ex
+    private Button btnMultiplyThirdEx1Second = new CreateButtonAnswers("6", 390, 450, 1, 1);
+    private Button btnMultiplyThirdEx2Second = new CreateButtonAnswers("21", 590, 450, 1, 1); //2nd correct
+    private Button btnMultiplyThirdEx3Second = new CreateButtonAnswers("3", 790, 450, 1, 1);
+    //Third Ex
+    private Button btnMultiplyThirdEx1Third = new CreateButtonAnswers("18", 390, 450, 1, 1);
+    private Button btnMultiplyThirdEx2Third = new CreateButtonAnswers("9", 590, 450, 1, 1);
+    private Button btnMultiplyThirdEx3Third = new CreateButtonAnswers("30", 790, 450, 1, 1); //3rd correct
+    //Fourth Ex
+    private Button btnMultiplyThirdEx1Fourth = new CreateButtonAnswers("24", 390, 450, 1, 1); //1st correct
+    private Button btnMultiplyThirdEx2Fourth = new CreateButtonAnswers("6", 590, 450, 1, 1);
+    private Button btnMultiplyThirdEx3Fourth = new CreateButtonAnswers("26", 790, 450, 1, 1);
+    //Fifth Ex
+    private Button btnMultiplyThirdEx1Fifth = new CreateButtonAnswers("15", 390, 450, 1, 1);
+    private Button btnMultiplyThirdEx2Fifth = new CreateButtonAnswers("13", 590, 450, 1, 1); //3rd correct
+    private Button btnMultiplyThirdEx3Fifth = new CreateButtonAnswers("18", 790, 450, 1, 1);
+    //Returns
+    Button Return_Askisi1_multiply3 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply3Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply3Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply3Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply3Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply3Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    //Multiply for 4
     private Button btnMultiplySelect4 = new CreateButtonAnswersMultiply("4", 800, 350, 1.5, 1.5);
+    private Button btnMultiplyFourthEx1 = new CreateButtonAnswers("25", 390, 450, 1, 1);
+    private Button btnMultiplyFourthEx2 = new CreateButtonAnswers("12", 590, 450, 1, 1);
+    private Button btnMultiplyFourthEx3 = new CreateButtonAnswers("16", 790, 450, 1, 1); //3rd Correct
+    //Second Ex
+    private Button btnMultiplyFourthEx1Second = new CreateButtonAnswers("24", 390, 450, 1, 1);
+    private Button btnMultiplyFourthEx2Second = new CreateButtonAnswers("40", 590, 450, 1, 1); //2nd correct
+    private Button btnMultiplyFourthEx3Second = new CreateButtonAnswers("14", 790, 450, 1, 1);
+    //Third Ex
+    private Button btnMultiplyFourthEx1Third = new CreateButtonAnswers("18", 390, 450, 1, 1);
+    private Button btnMultiplyFourthEx2Third = new CreateButtonAnswers("9", 590, 450, 1, 1);
+    private Button btnMultiplyFourthEx3Third = new CreateButtonAnswers("32", 790, 450, 1, 1); //3rd correct
+    //Fourth Ex
+    private Button btnMultiplyFourthEx1Fourth = new CreateButtonAnswers("36", 390, 450, 1, 1); //1st correct
+    private Button btnMultiplyFourthEx2Fourth = new CreateButtonAnswers("17", 590, 450, 1, 1);
+    private Button btnMultiplyFourthEx3Fourth = new CreateButtonAnswers("12", 790, 450, 1, 1);
+    //Fifth Ex
+    private Button btnMultiplyFourthEx1Fifth = new CreateButtonAnswers("18", 390, 450, 1, 1);
+    private Button btnMultiplyFourthEx2Fifth = new CreateButtonAnswers("13", 590, 450, 1, 1); //3rd correct
+    private Button btnMultiplyFourthEx3Fifth = new CreateButtonAnswers("28", 790, 450, 1, 1);
+    //Returns
+    Button Return_Askisi1_multiply4 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply4Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply4Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply4Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply4Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply4Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+
+    //Multiply for 5
     private Button btnMultiplySelect5 = new CreateButtonAnswersMultiply("5", 1000, 350, 1.5, 1.5);
+    private Button btnMultiplyFifthEx1 = new CreateButtonAnswers("15", 390, 450, 1, 1);
+    private Button btnMultiplyFifthEx2 = new CreateButtonAnswers("10", 590, 450, 1, 1);
+    private Button btnMultiplyFifthEx3 = new CreateButtonAnswers("25", 790, 450, 1, 1); //3rd Correct
+    //Second Ex
+    private Button btnMultiplyFifthEx1Second = new CreateButtonAnswers("45", 390, 450, 1, 1);
+    private Button btnMultiplyFifthEx2Second = new CreateButtonAnswers("50", 590, 450, 1, 1); //2nd correct
+    private Button btnMultiplyFifthEx3Second = new CreateButtonAnswers("5", 790, 450, 1, 1);
+    //Third Ex
+    private Button btnMultiplyFifthEx1Third = new CreateButtonAnswers("25", 390, 450, 1, 1);
+    private Button btnMultiplyFifthEx2Third = new CreateButtonAnswers("35", 590, 450, 1, 1);
+    private Button btnMultiplyFifthEx3Third = new CreateButtonAnswers("20", 790, 450, 1, 1); //3rd correct
+    //Fourth Ex
+    private Button btnMultiplyFifthEx1Fourth = new CreateButtonAnswers("15", 390, 450, 1, 1); //1st correct
+    private Button btnMultiplyFifthEx2Fourth = new CreateButtonAnswers("5", 590, 450, 1, 1);
+    private Button btnMultiplyFifthEx3Fourth = new CreateButtonAnswers("55", 790, 450, 1, 1);
+    //Fifth Ex
+    private Button btnMultiplyFifthEx1Fifth = new CreateButtonAnswers("44", 390, 450, 1, 1);
+    private Button btnMultiplyFifthEx2Fifth = new CreateButtonAnswers("13", 590, 450, 1, 1); //3rd correct
+    private Button btnMultiplyFifthEx3Fifth = new CreateButtonAnswers("5", 790, 450, 1, 1);
+    //Returns
+    Button Return_Askisi1_multiply5 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply5Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply5Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply5Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply5Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply5Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    //Multiply for 6
     private Button btnMultiplySelect6 = new CreateButtonAnswersMultiply("6", 300, 450, 1.5, 1.5);
+    private Button btnMultiplySixthEx1 = new CreateButtonAnswers("36", 390, 450, 1, 1);
+    private Button btnMultiplySixthEx2 = new CreateButtonAnswers("48", 590, 450, 1, 1);
+    private Button btnMultiplySixthEx3 = new CreateButtonAnswers("46", 790, 450, 1, 1); //1rd Correct
+    //Second Ex
+    private Button btnMultiplySixthEx1Second = new CreateButtonAnswers("46", 390, 450, 1, 1);
+    private Button btnMultiplySixthEx2Second = new CreateButtonAnswers("54", 590, 450, 1, 1); //2nd correct
+    private Button btnMultiplySixthEx3Second = new CreateButtonAnswers("32", 790, 450, 1, 1);
+    //Third Ex
+    private Button btnMultiplySixthEx1Third = new CreateButtonAnswers("12", 390, 450, 1, 1);
+    private Button btnMultiplySixthEx2Third = new CreateButtonAnswers("18", 590, 450, 1, 1);
+    private Button btnMultiplySixthEx3Third = new CreateButtonAnswers("30", 790, 450, 1, 1); //3rd correct
+    //Fourth Ex
+    private Button btnMultiplySixthEx1Fourth = new CreateButtonAnswers("24", 390, 450, 1, 1); //1st correct
+    private Button btnMultiplySixthEx2Fourth = new CreateButtonAnswers("22", 590, 450, 1, 1);
+    private Button btnMultiplySixthEx3Fourth = new CreateButtonAnswers("26", 790, 450, 1, 1);
+    //Fifth Ex
+    private Button btnMultiplySixthEx1Fifth = new CreateButtonAnswers("44", 390, 450, 1, 1);
+    private Button btnMultiplySixthEx2Fifth = new CreateButtonAnswers("13", 590, 450, 1, 1); //3rd correct
+    private Button btnMultiplySixthEx3Fifth = new CreateButtonAnswers("42", 790, 450, 1, 1);
+    //Returns
+    Button Return_Askisi1_multiply6 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply6Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply6Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply6Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply6Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply6Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+
+    //Multiply for 7
     private Button btnMultiplySelect7 = new CreateButtonAnswersMultiply("7", 500, 450, 1.5, 1.5);
+    private Button btnMultiplySeventhEx1 = new CreateButtonAnswers("70", 390, 450, 1, 1);
+    private Button btnMultiplySeventhEx2 = new CreateButtonAnswers("55", 590, 450, 1, 1);
+    private Button btnMultiplySeventhEx3 = new CreateButtonAnswers("66", 790, 450, 1, 1); //1rd Correct
+    //Second Ex
+    private Button btnMultiplySeventhEx1Second = new CreateButtonAnswers("42", 390, 450, 1, 1);
+    private Button btnMultiplySeventhEx2Second = new CreateButtonAnswers("52", 590, 450, 1, 1); //1nd correct
+    private Button btnMultiplySeventhEx3Second = new CreateButtonAnswers("32", 790, 450, 1, 1);
+    //Third Ex
+    private Button btnMultiplySeventhEx1Third = new CreateButtonAnswers("14", 390, 450, 1, 1);
+    private Button btnMultiplySeventhEx2Third = new CreateButtonAnswers("18", 590, 450, 1, 1);
+    private Button btnMultiplySeventhEx3Third = new CreateButtonAnswers("28", 790, 450, 1, 1); //3rd correct
+    //Fourth Ex
+    private Button btnMultiplySeventhEx1Fourth = new CreateButtonAnswers("56", 390, 450, 1, 1); //1st correct
+    private Button btnMultiplySeventhEx2Fourth = new CreateButtonAnswers("46", 590, 450, 1, 1);
+    private Button btnMultiplySeventhEx3Fourth = new CreateButtonAnswers("58", 790, 450, 1, 1);
+    //Fifth Ex
+    private Button btnMultiplySeventhEx1Fifth = new CreateButtonAnswers("45", 390, 450, 1, 1);
+    private Button btnMultiplySeventhEx2Fifth = new CreateButtonAnswers("40", 590, 450, 1, 1); //3rd correct
+    private Button btnMultiplySeventhEx3Fifth = new CreateButtonAnswers("35", 790, 450, 1, 1);
+    //Returns 7
+    Button Return_Askisi1_multiply7 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply7Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply7Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply7Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply7Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply7Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+
+    //Multiply for 8
     private Button btnMultiplySelect8 = new CreateButtonAnswersMultiply("8", 700, 450, 1.5, 1.5);
+    private Button btnMultiplyEightEx1 = new CreateButtonAnswers("74", 390, 450, 1, 1);
+    private Button btnMultiplyEightEx2 = new CreateButtonAnswers("56", 590, 450, 1, 1);
+    private Button btnMultiplyEightEx3 = new CreateButtonAnswers("72", 790, 450, 1, 1); //3rd Correct
+    //Second Ex
+    private Button btnMultiplyEightEx1Second = new CreateButtonAnswers("64", 390, 450, 1, 1);
+    private Button btnMultiplyEightEx2Second = new CreateButtonAnswers("44", 590, 450, 1, 1); //1nd correct
+    private Button btnMultiplyEightEx3Second = new CreateButtonAnswers("55", 790, 450, 1, 1);
+    //Third Ex
+    private Button btnMultiplyEightEx1Third = new CreateButtonAnswers("58", 390, 450, 1, 1);
+    private Button btnMultiplyEightEx2Third = new CreateButtonAnswers("48", 590, 450, 1, 1);
+    private Button btnMultiplyEightEx3Third = new CreateButtonAnswers("28", 790, 450, 1, 1); //2rd correct
+    //Fourth Ex
+    private Button btnMultiplyEightEx1Fourth = new CreateButtonAnswers("80", 390, 450, 1, 1); //1st correct
+    private Button btnMultiplyEightEx2Fourth = new CreateButtonAnswers("46", 590, 450, 1, 1);
+    private Button btnMultiplyEightEx3Fourth = new CreateButtonAnswers("58", 790, 450, 1, 1);
+    //Fifth Ex
+    private Button btnMultiplyEightEx1Fifth = new CreateButtonAnswers("14", 390, 450, 1, 1);
+    private Button btnMultiplyEightEx2Fifth = new CreateButtonAnswers("26", 590, 450, 1, 1); //3rd correct
+    private Button btnMultiplyEightEx3Fifth = new CreateButtonAnswers("16", 790, 450, 1, 1);
+    //Returns 8
+    Button Return_Askisi1_multiply8 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply8Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply8Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply8Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply8Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply8Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    //Multiply for 9
     private Button btnMultiplySelect9 = new CreateButtonAnswersMultiply("9", 900, 450, 1.5, 1.5);
+    private Button btnMultiplyNineEx1 = new CreateButtonAnswers("74", 390, 450, 1, 1);
+    private Button btnMultiplyNineEx2 = new CreateButtonAnswers("56", 590, 450, 1, 1);
+    private Button btnMultiplyNineEx3 = new CreateButtonAnswers("81", 790, 450, 1, 1); //3rd Correct
+    //Second Ex
+    private Button btnMultiplyNineEx1Second = new CreateButtonAnswers("45", 390, 450, 1, 1);
+    private Button btnMultiplyNineEx2Second = new CreateButtonAnswers("46", 590, 450, 1, 1); //1nd correct
+    private Button btnMultiplyNineEx3Second = new CreateButtonAnswers("55", 790, 450, 1, 1);
+    //Third Ex
+    private Button btnMultiplyNineEx1Third = new CreateButtonAnswers("58", 390, 450, 1, 1);
+    private Button btnMultiplyNineEx2Third = new CreateButtonAnswers("36", 590, 450, 1, 1);
+    private Button btnMultiplyNineEx3Third = new CreateButtonAnswers("55", 790, 450, 1, 1); //2rd correct
+    //Fourth Ex
+    private Button btnMultiplyNineEx1Fourth = new CreateButtonAnswers("54", 390, 450, 1, 1); //1st correct
+    private Button btnMultiplyNineEx2Fourth = new CreateButtonAnswers("46", 590, 450, 1, 1);
+    private Button btnMultiplyNineEx3Fourth = new CreateButtonAnswers("58", 790, 450, 1, 1);
+    //Fifth Ex
+    private Button btnMultiplyNineEx1Fifth = new CreateButtonAnswers("14", 390, 450, 1, 1);
+    private Button btnMultiplyNineEx2Fifth = new CreateButtonAnswers("26", 590, 450, 1, 1); //3rd correct
+    private Button btnMultiplyNineEx3Fifth = new CreateButtonAnswers("27", 790, 450, 1, 1);
+    //Returns 9
+    Button Return_Askisi1_multiply9 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply9Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply9Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply9Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply9Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply9Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    //Multiply for 10
     private Button btnMultiplySelect10 = new CreateButtonAnswersMultiply("10", 600, 550, 1.5, 1.5);
+    private Button btnMultiplyTenEx1 = new CreateButtonAnswers("70", 390, 450, 1, 1);
+    private Button btnMultiplyTenEx2 = new CreateButtonAnswers("56", 590, 450, 1, 1);
+    private Button btnMultiplyTenEx3 = new CreateButtonAnswers("50", 790, 450, 1, 1); //3rd Correct
+    //Second Ex
+    private Button btnMultiplyTenEx1Second = new CreateButtonAnswers("100", 390, 450, 1, 1);
+    private Button btnMultiplyTenEx2Second = new CreateButtonAnswers("60", 590, 450, 1, 1); //1nd correct
+    private Button btnMultiplyTenEx3Second = new CreateButtonAnswers("10", 790, 450, 1, 1);
+    //Third Ex
+    private Button btnMultiplyTenEx1Third = new CreateButtonAnswers("30", 390, 450, 1, 1);
+    private Button btnMultiplyTenEx2Third = new CreateButtonAnswers("40", 590, 450, 1, 1);
+    private Button btnMultiplyTenEx3Third = new CreateButtonAnswers("20", 790, 450, 1, 1); //2rd correct
+    //Fourth Ex
+    private Button btnMultiplyTenEx1Fourth = new CreateButtonAnswers("80", 390, 450, 1, 1); //1st correct
+    private Button btnMultiplyTenEx2Fourth = new CreateButtonAnswers("46", 590, 450, 1, 1);
+    private Button btnMultiplyTenEx3Fourth = new CreateButtonAnswers("58", 790, 450, 1, 1);
+    //Fifth Ex
+    private Button btnMultiplyTenEx1Fifth = new CreateButtonAnswers("1 0", 390, 450, 1, 1);
+    private Button btnMultiplyTenEx2Fifth = new CreateButtonAnswers("25", 590, 450, 1, 1); //3rd correct
+    private Button btnMultiplyTenEx3Fifth = new CreateButtonAnswers("20", 790, 450, 1, 1);
+    //Returns 7
+    Button Return_Askisi1_multiply10 = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply10Second = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply10Third = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply10Fourth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply10Fifth = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+    Button Return_Askisi1_multiply10Final = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
+
     private Button Number77_Askisi2_Prosthesi = new CreateButtonsAdd("/Number_77.jpg", 10, 20);
     private Button Number55_Askisi2_prosthesi = new CreateButtonsAdd("/Number_55.jpg", -230, 20);
     private Button Number5_Askisi3_prosthesi = new CreateButtonsAdd("/Number_5.jpg", 230, 20);
@@ -335,15 +716,20 @@ public class MathsFX extends Application {
     }
 
     public static void startAnimationButton(Button b) {
-        ScaleTransition st = new ScaleTransition(Duration.seconds(1.5), b);
+        ScaleTransition st = new ScaleTransition(Duration.millis(4000), b);
         st.setToY(1);
         st.play();
+        b.setCache(true);
+        b.setCacheHint(CacheHint.SPEED);
     }
 
     private void startAnimationLine() {
-        ScaleTransition st = new ScaleTransition(Duration.seconds(1.5), line);
+        ScaleTransition st = new ScaleTransition(Duration.millis(1900), line);
         st.setToY(1);
         st.play();
+        line.setCache(true);
+        line.setCacheHint(CacheHint.SPEED);
+
     }
 
     public void startAdd() {
@@ -489,30 +875,245 @@ public class MathsFX extends Application {
         imageView2.setFitWidth(WIDTH);
         imageView2.setFitHeight(HEIGHT);
         //Images for Multiply panes
-        ImageView imageViewMultiply1 = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
-        imageViewMultiply1.setFitWidth(WIDTH);
-        imageViewMultiply1.setFitHeight(HEIGHT);
+        ImageView imageViewMultiplyFor1First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor1First.setFitWidth(WIDTH);
+        imageViewMultiplyFor1First.setFitHeight(HEIGHT);
 
-        ImageView imageViewMultiply2 = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
-        imageViewMultiply2.setFitWidth(WIDTH);
-        imageViewMultiply2.setFitHeight(HEIGHT);
+        ImageView imageViewMultiplyFor1Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor1Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor1Second.setFitHeight(HEIGHT);
 
-        ImageView imageViewMultiply3 = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
-        imageViewMultiply3.setFitWidth(WIDTH);
-        imageViewMultiply3.setFitHeight(HEIGHT);
+        ImageView imageViewMultiplyFor1Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor1Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor1Third.setFitHeight(HEIGHT);
 
-        ImageView imageViewMultiply4 = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
-        imageViewMultiply4.setFitWidth(WIDTH);
-        imageViewMultiply4.setFitHeight(HEIGHT);
+        ImageView imageViewMultiplyFor1Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor1Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor1Fourth.setFitHeight(HEIGHT);
 
-        ImageView imageViewMultiply5 = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
-        imageViewMultiply5.setFitWidth(WIDTH);
-        imageViewMultiply5.setFitHeight(HEIGHT);
+        ImageView imageViewMultiplyFor1Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor1Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor1Fifth.setFitHeight(HEIGHT);
 
         ImageView imageViewMultiply1Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
         imageViewMultiply1Final.setFitWidth(WIDTH);
         imageViewMultiply1Final.setFitHeight(HEIGHT);
 
+        ImageView imageViewMultiplyFor2First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor2First.setFitWidth(WIDTH);
+        imageViewMultiplyFor2First.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor2Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor2Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor2Second.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor2Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor2Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor2Third.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor2Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor2Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor2Fourth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor2Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor2Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor2Fifth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiply2Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiply2Final.setFitWidth(WIDTH);
+        imageViewMultiply2Final.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor3First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor3First.setFitWidth(WIDTH);
+        imageViewMultiplyFor3First.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor3Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor3Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor3Second.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor3Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor3Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor3Third.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor3Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor3Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor3Fourth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor3Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor3Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor3Fifth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiply3Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiply3Final.setFitWidth(WIDTH);
+        imageViewMultiply3Final.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor4First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor4First.setFitWidth(WIDTH);
+        imageViewMultiplyFor4First.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor4Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor4Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor4Second.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor4Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor4Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor4Third.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor4Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor4Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor4Fourth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor4Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor4Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor4Fifth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiply4Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiply4Final.setFitWidth(WIDTH);
+        imageViewMultiply4Final.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor5First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor5First.setFitWidth(WIDTH);
+        imageViewMultiplyFor5First.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor5Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor5Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor5Second.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor5Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor5Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor5Third.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor5Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor5Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor5Fourth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor5Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor5Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor5Fifth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiply5Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiply5Final.setFitWidth(WIDTH);
+        imageViewMultiply5Final.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor6First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor6First.setFitWidth(WIDTH);
+        imageViewMultiplyFor6First.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor6Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor6Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor6Second.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor6Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor6Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor6Third.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor6Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor6Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor6Fourth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor6Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor6Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor6Fifth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiply6Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiply6Final.setFitWidth(WIDTH);
+        imageViewMultiply6Final.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor7First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor7First.setFitWidth(WIDTH);
+        imageViewMultiplyFor7First.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor7Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor7Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor7Second.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor7Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor7Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor7Third.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor7Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor7Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor7Fourth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor7Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor7Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor7Fifth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiply7Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiply7Final.setFitWidth(WIDTH);
+        imageViewMultiply7Final.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor8First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor8First.setFitWidth(WIDTH);
+        imageViewMultiplyFor8First.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor8Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor8Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor8Second.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor8Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor8Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor8Third.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor8Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor8Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor8Fourth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor8Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor8Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor8Fifth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiply8Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiply8Final.setFitWidth(WIDTH);
+        imageViewMultiply8Final.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor9First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor9First.setFitWidth(WIDTH);
+        imageViewMultiplyFor9First.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor9Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor9Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor9Second.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor9Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor9Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor9Third.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor9Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor9Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor9Fourth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor9Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor9Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor9Fifth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiply9Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiply9Final.setFitWidth(WIDTH);
+        imageViewMultiply9Final.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor10First = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor10First.setFitWidth(WIDTH);
+        imageViewMultiplyFor10First.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor10Second = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor10Second.setFitWidth(WIDTH);
+        imageViewMultiplyFor10Second.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor10Third = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor10Third.setFitWidth(WIDTH);
+        imageViewMultiplyFor10Third.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor10Fourth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor10Fourth.setFitWidth(WIDTH);
+        imageViewMultiplyFor10Fourth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiplyFor10Fifth = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiplyFor10Fifth.setFitWidth(WIDTH);
+        imageViewMultiplyFor10Fifth.setFitHeight(HEIGHT);
+
+        ImageView imageViewMultiply10Final = new ImageView(new Image(getClass().getResource("board.jpg").toExternalForm()));
+        imageViewMultiply10Final.setFitWidth(WIDTH);
+        imageViewMultiply10Final.setFitHeight(HEIGHT);
         //Titles
         Title title = new Title("Μαθηματικά");
         title.setTranslateX(WIDTH / 2 - title.getTitleWidth() / 2);
@@ -522,9 +1123,9 @@ public class MathsFX extends Application {
         titleAdd.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
         titleAdd.setTranslateY(HEIGHT / 4);
 
-        Title titleMultiply1ExFirst = new Title("1 x 9 =");
-        titleMultiply1ExFirst.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
-        titleMultiply1ExFirst.setTranslateY(HEIGHT / 3);
+        Title titleMultiply1First = new Title("1 x 9 =");
+        titleMultiply1First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply1First.setTranslateY(HEIGHT / 3);
 
         Title titleMultiply1Second = new Title("1 x 6 =");
         titleMultiply1Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
@@ -547,6 +1148,240 @@ public class MathsFX extends Application {
         titleMultiply1Final.setTextFill(Color.WHITESMOKE);
         titleMultiply1Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
         titleMultiply1Final.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply2First = new Title("2 x 6 ="); //First is Correct
+        titleMultiply2First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply2First.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply2Second = new Title("2 x 10 ="); //third is correct
+        titleMultiply2Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply2Second.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply2Third = new Title("2 x 4 ="); //second is correct
+        titleMultiply2Third.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply2Third.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply2Fourth = new Title("2 x 7 ="); //third is correct
+        titleMultiply2Fourth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply2Fourth.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply2Fifth = new Title("2 x 2 ="); //first is correct
+        titleMultiply2Fifth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply2Fifth.setTranslateY(HEIGHT / 3);
+
+        Label titleMultiply2Final = new Label();
+        titleMultiply2Final.setFont(Font.loadFont(MathsFX.class.getResource("CaslonItalic.ttf").toExternalForm(), 68));
+        titleMultiply2Final.setTextFill(Color.WHITESMOKE);
+        titleMultiply2Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
+        titleMultiply2Final.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply3First = new Title("3 x 5 ="); //3rd is Correct
+        titleMultiply3First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply3First.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply3Second = new Title("3 x 7 ="); //2rn is correct
+        titleMultiply3Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply3Second.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply3Third = new Title("3 x 10 ="); //3rd is correct
+        titleMultiply3Third.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply3Third.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply3Fourth = new Title("3 x 8 ="); //1st is correct
+        titleMultiply3Fourth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply3Fourth.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply3Fifth = new Title("3 x 6 ="); //3rd is correct
+        titleMultiply3Fifth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply3Fifth.setTranslateY(HEIGHT / 3);
+
+        Label titleMultiply3Final = new Label();
+        titleMultiply3Final.setFont(Font.loadFont(MathsFX.class.getResource("CaslonItalic.ttf").toExternalForm(), 68));
+        titleMultiply3Final.setTextFill(Color.WHITESMOKE);
+        titleMultiply3Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
+        titleMultiply3Final.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply4First = new Title("4 x 4 ="); //3rd is Correct
+        titleMultiply4First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply4First.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply4Second = new Title("4 x 10 ="); //2rn is correct
+        titleMultiply4Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply4Second.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply4Third = new Title("4 x 8 ="); //3rd is correct
+        titleMultiply4Third.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply4Third.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply4Fourth = new Title("4 x 9 ="); //1st is correct
+        titleMultiply4Fourth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply4Fourth.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply4Fifth = new Title("4 x 7 ="); //3rd is correct
+        titleMultiply4Fifth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply4Fifth.setTranslateY(HEIGHT / 3);
+
+        Label titleMultiply4Final = new Label();
+        titleMultiply4Final.setFont(Font.loadFont(MathsFX.class.getResource("CaslonItalic.ttf").toExternalForm(), 68));
+        titleMultiply4Final.setTextFill(Color.WHITESMOKE);
+        titleMultiply4Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
+        titleMultiply4Final.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply5First = new Title("5 x 5 ="); //3rd is Correct
+        titleMultiply5First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply5First.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply5Second = new Title("5 x 10 ="); //2rn is correct
+        titleMultiply5Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply5Second.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply5Third = new Title("5 x 4 ="); //3rd is correct
+        titleMultiply5Third.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply5Third.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply5Fourth = new Title("5 x 3 ="); //1st is correct
+        titleMultiply5Fourth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply5Fourth.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply5Fifth = new Title("5 x 1 ="); //3rd is correct
+        titleMultiply5Fifth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply5Fifth.setTranslateY(HEIGHT / 3);
+
+        Label titleMultiply5Final = new Label();
+        titleMultiply5Final.setFont(Font.loadFont(MathsFX.class.getResource("CaslonItalic.ttf").toExternalForm(), 68));
+        titleMultiply5Final.setTextFill(Color.WHITESMOKE);
+        titleMultiply5Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
+        titleMultiply5Final.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply6First = new Title("6 x 6 ="); //1rd is Correct
+        titleMultiply6First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply6First.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply6Second = new Title("6 x 9 ="); //2rn is correct
+        titleMultiply6Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply6Second.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply6Third = new Title("6 x 5 ="); //3rd is correct
+        titleMultiply6Third.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply6Third.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply6Fourth = new Title("6 x 4 ="); //1st is correct
+        titleMultiply6Fourth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply6Fourth.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply6Fifth = new Title("6 x 7 ="); //3rd is correct
+        titleMultiply6Fifth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply6Fifth.setTranslateY(HEIGHT / 3);
+
+        Label titleMultiply6Final = new Label();
+        titleMultiply6Final.setFont(Font.loadFont(MathsFX.class.getResource("CaslonItalic.ttf").toExternalForm(), 68));
+        titleMultiply6Final.setTextFill(Color.WHITESMOKE);
+        titleMultiply6Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
+        titleMultiply6Final.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply7First = new Title("7 x 10 ="); //1rd is Correct
+        titleMultiply7First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply7First.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply7Second = new Title("7 x 6 ="); //1rn is correct
+        titleMultiply7Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply7Second.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply7Third = new Title("7 x 4 ="); //3rd is correct
+        titleMultiply7Third.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply7Third.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply7Fourth = new Title("7 x 8 ="); //1st is correct
+        titleMultiply7Fourth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply7Fourth.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply7Fifth = new Title("7 x 5 ="); //3rd is correct
+        titleMultiply7Fifth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply7Fifth.setTranslateY(HEIGHT / 3);
+
+        Label titleMultiply7Final = new Label();
+        titleMultiply7Final.setFont(Font.loadFont(MathsFX.class.getResource("CaslonItalic.ttf").toExternalForm(), 68));
+        titleMultiply7Final.setTextFill(Color.WHITESMOKE);
+        titleMultiply7Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
+        titleMultiply7Final.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply8First = new Title("8 x 9 ="); //3rd is Correct
+        titleMultiply8First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply8First.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply8Second = new Title("8 x 8 ="); //1rn is correct
+        titleMultiply8Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply8Second.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply8Third = new Title("8 x 6 ="); //2rd is correct
+        titleMultiply8Third.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply8Third.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply8Fourth = new Title("8 x 10 ="); //1st is correct
+        titleMultiply8Fourth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply8Fourth.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply8Fifth = new Title("8 x 2 ="); //3rd is correct
+        titleMultiply8Fifth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply8Fifth.setTranslateY(HEIGHT / 3);
+
+        Label titleMultiply8Final = new Label();
+        titleMultiply8Final.setFont(Font.loadFont(MathsFX.class.getResource("CaslonItalic.ttf").toExternalForm(), 68));
+        titleMultiply8Final.setTextFill(Color.WHITESMOKE);
+        titleMultiply8Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
+        titleMultiply8Final.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply9First = new Title("9 x 9 ="); //3rd is Correct
+        titleMultiply9First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply9First.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply9Second = new Title("9 x 5 ="); //1rn is correct
+        titleMultiply9Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply9Second.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply9Third = new Title("9 x 4 ="); //2rd is correct
+        titleMultiply9Third.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply9Third.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply9Fourth = new Title("9 x 6 ="); //1st is correct
+        titleMultiply9Fourth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply9Fourth.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply9Fifth = new Title("9 x 3 ="); //3rd is correct
+        titleMultiply9Fifth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply9Fifth.setTranslateY(HEIGHT / 3);
+
+        Label titleMultiply9Final = new Label();
+        titleMultiply9Final.setFont(Font.loadFont(MathsFX.class.getResource("CaslonItalic.ttf").toExternalForm(), 68));
+        titleMultiply9Final.setTextFill(Color.WHITESMOKE);
+        titleMultiply9Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
+        titleMultiply9Final.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply10First = new Title("10 x 5 ="); //3rd is Correct
+        titleMultiply10First.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply10First.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply10Second = new Title("10 x 10 ="); //1rn is correct
+        titleMultiply10Second.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply10Second.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply10Third = new Title("10 x 2 ="); //2rd is correct
+        titleMultiply10Third.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply10Third.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply10Fourth = new Title("10 x 8 ="); //1st is correct
+        titleMultiply10Fourth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply10Fourth.setTranslateY(HEIGHT / 3);
+
+        Title titleMultiply10Fifth = new Title("10 x 2 ="); //3rd is correct
+        titleMultiply10Fifth.setTranslateX(WIDTH / 1.65 - title.getTitleWidth() / 2);
+        titleMultiply10Fifth.setTranslateY(HEIGHT / 3);
+
+        Label titleMultiply10Final = new Label();
+        titleMultiply10Final.setFont(Font.loadFont(MathsFX.class.getResource("CaslonItalic.ttf").toExternalForm(), 68));
+        titleMultiply10Final.setTextFill(Color.WHITESMOKE);
+        titleMultiply10Final.setTranslateX(WIDTH / 1.9 - title.getTitleWidth() / 2);
+        titleMultiply10Final.setTranslateY(HEIGHT / 3);
 
         Title titleLearn = new Title("Δίαλεξε την κατηγορία \n"
                 + "που επιθυμείς να μάθεις");
@@ -740,7 +1575,6 @@ public class MathsFX extends Application {
                 });
             }
         });
-
         Number9_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
         Number5_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
         help_Askisi3_prosthesi.setOnAction(e -> Help2.display("Βοήθεια", "Το κάθε δάχτυλο είναι μια μονάδα!"));
@@ -863,7 +1697,6 @@ public class MathsFX extends Application {
                 });
             }
         });
-
         Return_Askisi3_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -1672,6 +2505,8 @@ public class MathsFX extends Application {
                 KeyFrame kf = new KeyFrame(Duration.seconds(1), kv);
                 timeline.getKeyFrames().add(kf);
                 primaryStage.setScene(sceneLearn);
+                rootLearn.setCache(true);
+                rootLearn.setCacheHint(CacheHint.SPEED);
                 timeline.play();
             }
         });
@@ -1694,6 +2529,8 @@ public class MathsFX extends Application {
                 ft.setFromValue(0);
                 ft.setToValue(1);
                 ft.play();
+                rootMultiply.setCache(true);
+                rootMultiply.setCacheHint(CacheHint.SPEED);
                 primaryStage.setScene(sceneMultiply);
             }
         });
@@ -2059,6 +2896,10 @@ public class MathsFX extends Application {
                 ft.play();
                 primaryStage.setScene(sceneMultiply1Final);
                 switch (counter) {
+                    case 0:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
                     case 1:
                         titleMultiply1Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
                         titleMultiply1Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
@@ -2074,10 +2915,12 @@ public class MathsFX extends Application {
                     case 4:
                         titleMultiply1Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
                         titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
                         break;
                     case 5:
                         titleMultiply1Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
                         titleMultiply1Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
                         break;
                 }
             }
@@ -2092,6 +2935,10 @@ public class MathsFX extends Application {
                 ft.play();
                 primaryStage.setScene(sceneMultiply1Final);
                 switch (counter) {
+                    case 0:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
                     case 1:
                         titleMultiply1Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
                         titleMultiply1Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
@@ -2107,10 +2954,12 @@ public class MathsFX extends Application {
                     case 4:
                         titleMultiply1Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
                         titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
                         break;
                     case 5:
                         titleMultiply1Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
                         titleMultiply1Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
                         break;
                 }
             }
@@ -2126,6 +2975,10 @@ public class MathsFX extends Application {
                 counter();
 
                 switch (counter) {
+                    case 0:
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
                     case 1:
                         titleMultiply1Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
                         titleMultiply1Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
@@ -2139,12 +2992,14 @@ public class MathsFX extends Application {
                         titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
                         break;
                     case 4:
-                        titleMultiply1Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
-                        titleMultiply1Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        titleMultiply1Final.setTranslateX(WIDTH / 2.9 - title.getTitleWidth() / 2);
+                        titleMultiply1Final.setText("Τα πήγες αρκετά καλά : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
                         break;
                     case 5:
                         titleMultiply1Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
                         titleMultiply1Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
                         break;
                 }
 
@@ -2152,14 +3007,3612 @@ public class MathsFX extends Application {
 
             }
         });
+        btnMultiplySelect2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                rootMultiply2.setCache(true);
+                rootMultiply2.setCacheHint(CacheHint.SPEED);
+                primaryStage.setScene(sceneMultiply2);
+            }
+        });
+        Return_Askisi1_multiply2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+            }
+        });
+        btnMultiplySecondEx1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply2Second);
+            }
+        });
+        btnMultiplySecondEx2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply2Second);
+            }
+        });
+        btnMultiplySecondEx3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply2Second);
+            }
+        });
+        btnMultiplySecondEx1Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply2Third);
+            }
+        });
+        btnMultiplySecondEx2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply2Third);
+            }
+        });
+        btnMultiplySecondEx3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply2Third);
+            }
+        });
+        btnMultiplySecondEx1Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply2Fourth);
+            }
+        });
+        btnMultiplySecondEx2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply2Fourth);
+            }
+        });
+        btnMultiplySecondEx3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply2Fourth);
+            }
+        });
+        btnMultiplySecondEx1Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply2Fifth);
+            }
+        });
+        btnMultiplySecondEx2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply2Fifth);
+            }
+        });
+        btnMultiplySecondEx3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply2Fifth);
+            }
+        });
+        btnMultiplySecondEx1Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                switch (counter) {
+                    case 0:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply2Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply2Final);
 
+            }
+        });
+        btnMultiplySecondEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply2Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply2Final);
+            }
+        });
+        btnMultiplySecondEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply2Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply2Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply2Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply2Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply2Final);
+            }
+        });
+        //Returns for 2
+        Return_Askisi1_multiply2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply2Final.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        btnMultiplySelect3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                rootMultiply2.setCache(true);
+                rootMultiply2.setCacheHint(CacheHint.SPEED);
+                primaryStage.setScene(sceneMultiply3);
+            }
+        });
+        Return_Askisi1_multiply3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+            }
+        });
+        btnMultiplyThirdEx1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply3Second);
+            }
+        });
+        btnMultiplyThirdEx2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply3Second);
+            }
+        });
+        btnMultiplyThirdEx3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply3Second);
+            }
+        });
+        btnMultiplyThirdEx1Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply3Third);
+            }
+        });
+        btnMultiplyThirdEx2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply3Third);
+            }
+        });
+        btnMultiplyThirdEx3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply3Third);
+            }
+        });
+        btnMultiplyThirdEx1Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply3Fourth);
+            }
+        });
+        btnMultiplyThirdEx2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply3Fourth);
+            }
+        });
+        btnMultiplyThirdEx3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply3Fourth);
+            }
+        });
+        btnMultiplyThirdEx1Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply3Fifth);
+            }
+        });
+        btnMultiplyThirdEx2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply3Fifth);
+            }
+        });
+        btnMultiplyThirdEx3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply3Fifth);
+            }
+        });
+        btnMultiplyThirdEx1Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply3Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply3Final);
+
+            }
+        });
+        btnMultiplyThirdEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply3Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply3Final);
+            }
+        });
+        btnMultiplyThirdEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply3Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                switch (counter) {
+                    case 0:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply3Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply3Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply3Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply3Final);
+            }
+        });
+        //Returns for 3
+        Return_Askisi1_multiply3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply3Final.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        //Buttons for 4
+        btnMultiplySelect4.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                rootMultiply4.setCache(true);
+                rootMultiply4.setCacheHint(CacheHint.SPEED);
+                primaryStage.setScene(sceneMultiply4);
+            }
+        });
+        Return_Askisi1_multiply4.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+            }
+        });
+        btnMultiplyFourthEx1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply4Second);
+            }
+        });
+        btnMultiplyFourthEx2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply4Second);
+            }
+        });
+        btnMultiplyFourthEx3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply4Second);
+            }
+        });
+        btnMultiplyFourthEx1Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply4Third);
+            }
+        });
+        btnMultiplyFourthEx2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply4Third);
+            }
+        });
+        btnMultiplyFourthEx3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply4Third);
+            }
+        });
+        btnMultiplyFourthEx1Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply4Fourth);
+            }
+        });
+        btnMultiplyFourthEx2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply4Fourth);
+            }
+        });
+        btnMultiplyFourthEx3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply4Fourth);
+            }
+        });
+        btnMultiplyFourthEx1Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply4Fifth);
+            }
+        });
+        btnMultiplyFourthEx2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply4Fifth);
+            }
+        });
+        btnMultiplyFourthEx3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply4Fifth);
+            }
+        });
+        btnMultiplyFourthEx1Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply4Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply4Final);
+
+            }
+        });
+        btnMultiplyFourthEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply4Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply4Final);
+            }
+        });
+        btnMultiplyFourthEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply4Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                switch (counter) {
+                    case 0:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply4Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply4Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply4Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply4Final);
+            }
+        });
+        //Returns for 4
+        Return_Askisi1_multiply4.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply4Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply4Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply4Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply4Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply4Final.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        //Buttons for 5
+        btnMultiplySelect5.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                rootMultiply4.setCache(true);
+                rootMultiply4.setCacheHint(CacheHint.SPEED);
+                primaryStage.setScene(sceneMultiply5);
+            }
+        });
+        btnMultiplyFifthEx1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply5Second);
+            }
+        });
+        btnMultiplyFifthEx2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply5Second);
+            }
+        });
+        btnMultiplyFifthEx3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply5Second);
+            }
+        });
+        btnMultiplyFifthEx1Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply5Third);
+            }
+        });
+        btnMultiplyFifthEx2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply5Third);
+            }
+        });
+        btnMultiplyFifthEx3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply5Third);
+            }
+        });
+        btnMultiplyFifthEx1Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply5Fourth);
+            }
+        });
+        btnMultiplyFifthEx2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply5Fourth);
+            }
+        });
+        btnMultiplyFifthEx3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply5Fourth);
+            }
+        });
+        btnMultiplyFifthEx1Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply5Fifth);
+            }
+        });
+        btnMultiplyFifthEx2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply5Fifth);
+            }
+        });
+        btnMultiplyFifthEx3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply5Fifth);
+            }
+        });
+        btnMultiplyFifthEx1Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply5Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply5Final);
+
+            }
+        });
+        btnMultiplyFifthEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply5Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply5Final);
+            }
+        });
+        btnMultiplyFifthEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply5Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                switch (counter) {
+                    case 0:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply5Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply5Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply5Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply5Final);
+            }
+        });
+        //Returns for 5
+        Return_Askisi1_multiply5.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply5Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply5Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply5Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply5Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply5Final.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        //Buttons for 6
+        btnMultiplySelect6.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                rootMultiply6.setCache(true);
+                rootMultiply6.setCacheHint(CacheHint.SPEED);
+                primaryStage.setScene(sceneMultiply6);
+            }
+        });
+        btnMultiplySixthEx1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply6Second);
+            }
+        });
+        btnMultiplySixthEx2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply6Second);
+            }
+        });
+        btnMultiplySixthEx3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply6Second);
+            }
+        });
+        btnMultiplySixthEx1Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply6Third);
+            }
+        });
+        btnMultiplySixthEx2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply6Third);
+            }
+        });
+        btnMultiplySixthEx3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply6Third);
+            }
+        });
+        btnMultiplySixthEx1Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply6Fourth);
+            }
+        });
+        btnMultiplySixthEx2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply6Fourth);
+            }
+        });
+        btnMultiplySixthEx3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply6Fourth);
+            }
+        });
+        btnMultiplySixthEx1Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply6Fifth);
+            }
+        });
+        btnMultiplySixthEx2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply6Fifth);
+            }
+        });
+        btnMultiplySixthEx3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply6Fifth);
+            }
+        });
+        btnMultiplySixthEx1Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply6Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply6Final);
+
+            }
+        });
+        btnMultiplySixthEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply6Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply6Final);
+            }
+        });
+        btnMultiplySixthEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply6Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                switch (counter) {
+                    case 0:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply6Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply6Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply6Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply6Final);
+            }
+        });
+        //Returns for 6
+        Return_Askisi1_multiply6.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply6Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply6Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply6Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply6Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply6Final.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        //Buttons for 7
+        btnMultiplySelect7.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                rootMultiply7.setCache(true);
+                rootMultiply7.setCacheHint(CacheHint.SPEED);
+                primaryStage.setScene(sceneMultiply7);
+            }
+        });
+        btnMultiplySeventhEx1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply7Second);
+            }
+        });
+        btnMultiplySeventhEx2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply7Second);
+            }
+        });
+        btnMultiplySeventhEx3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply7Second);
+            }
+        });
+        btnMultiplySeventhEx1Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply7Third);
+            }
+        });
+        btnMultiplySeventhEx2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply7Third);
+            }
+        });
+        btnMultiplySeventhEx3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply7Third);
+            }
+        });
+        btnMultiplySeventhEx1Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply7Fourth);
+            }
+        });
+        btnMultiplySeventhEx2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply7Fourth);
+            }
+        });
+        btnMultiplySeventhEx3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply7Fourth);
+            }
+        });
+        btnMultiplySeventhEx1Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply7Fifth);
+            }
+        });
+        btnMultiplySeventhEx2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply7Fifth);
+            }
+        });
+        btnMultiplySeventhEx3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply7Fifth);
+            }
+        });
+        btnMultiplySeventhEx1Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply7Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply7Final);
+
+            }
+        });
+        btnMultiplySeventhEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply7Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply7Final);
+            }
+        });
+        btnMultiplySeventhEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply7Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                switch (counter) {
+                    case 0:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply7Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply7Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply7Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply7Final);
+            }
+        });
+//        Returns for 7
+        Return_Askisi1_multiply7.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply7Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply7Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply7Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply7Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply7Final.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+
+        //Buttons for 8
+        btnMultiplySelect8.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                rootMultiply7.setCache(true);
+                rootMultiply7.setCacheHint(CacheHint.SPEED);
+                primaryStage.setScene(sceneMultiply8);
+            }
+        });
+        btnMultiplyEightEx1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply8Second);
+            }
+        });
+        btnMultiplyEightEx2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply8Second);
+            }
+        });
+        btnMultiplyEightEx3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply8Second);
+            }
+        });
+        btnMultiplyEightEx1Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply8Third);
+            }
+        });
+        btnMultiplyEightEx2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply8Third);
+            }
+        });
+        btnMultiplyEightEx3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply8Third);
+            }
+        });
+        btnMultiplyEightEx1Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply8Fourth);
+            }
+        });
+        btnMultiplyEightEx2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply8Fourth);
+            }
+        });
+        btnMultiplyEightEx3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply8Fourth);
+            }
+        });
+        btnMultiplyEightEx1Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply8Fifth);
+            }
+        });
+        btnMultiplyEightEx2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply8Fifth);
+            }
+        });
+        btnMultiplyEightEx3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply8Fifth);
+            }
+        });
+        btnMultiplyEightEx1Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply8Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply8Final);
+
+            }
+        });
+        btnMultiplyEightEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply8Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply8Final);
+            }
+        });
+        btnMultiplyEightEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply8Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                switch (counter) {
+                    case 0:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply8Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply8Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply8Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply8Final);
+            }
+        });
+//        Returns for 8
+        Return_Askisi1_multiply8.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply8Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply8Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply8Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply8Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply8Final.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+
+        //Buttons for 9
+        btnMultiplySelect9.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                rootMultiply9.setCache(true);
+                rootMultiply9.setCacheHint(CacheHint.SPEED);
+                primaryStage.setScene(sceneMultiply9);
+            }
+        });
+        btnMultiplyNineEx1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply9Second);
+            }
+        });
+        btnMultiplyNineEx2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply9Second);
+            }
+        });
+        btnMultiplyNineEx3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply9Second);
+            }
+        });
+        btnMultiplyNineEx1Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply9Third);
+            }
+        });
+        btnMultiplyNineEx2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply9Third);
+            }
+        });
+        btnMultiplyNineEx3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply9Third);
+            }
+        });
+        btnMultiplyNineEx1Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply9Fourth);
+            }
+        });
+        btnMultiplyNineEx2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply9Fourth);
+            }
+        });
+        btnMultiplyNineEx3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply9Fourth);
+            }
+        });
+        btnMultiplyNineEx1Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply9Fifth);
+            }
+        });
+        btnMultiplyNineEx2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply9Fifth);
+            }
+        });
+        btnMultiplyNineEx3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply9Fifth);
+            }
+        });
+        btnMultiplyNineEx1Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply9Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply9Final);
+
+            }
+        });
+        btnMultiplyNineEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply9Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply9Final);
+            }
+        });
+        btnMultiplyNineEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply9Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                switch (counter) {
+                    case 0:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply9Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply9Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply9Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply9Final);
+            }
+        });
+//        Returns for 9
+        Return_Askisi1_multiply9.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply9Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply9Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply9Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply9Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply9Final.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+
+        //Buttons for 9
+        btnMultiplySelect10.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                rootMultiply9.setCache(true);
+                rootMultiply9.setCacheHint(CacheHint.SPEED);
+                primaryStage.setScene(sceneMultiply10);
+            }
+        });
+        btnMultiplyTenEx1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply10Second);
+            }
+        });
+        btnMultiplyTenEx2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply10Second);
+            }
+        });
+        btnMultiplyTenEx3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Second);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply10Second);
+            }
+        });
+        btnMultiplyTenEx1Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply10Third);
+            }
+        });
+        btnMultiplyTenEx2Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply10Third);
+            }
+        });
+        btnMultiplyTenEx3Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Third);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply10Third);
+            }
+        });
+        btnMultiplyTenEx1Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply10Fourth);
+            }
+        });
+        btnMultiplyTenEx2Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply10Fourth);
+            }
+        });
+        btnMultiplyTenEx3Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Fourth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply10Fourth);
+            }
+        });
+        btnMultiplyTenEx1Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                primaryStage.setScene(sceneMultiply10Fifth);
+            }
+        });
+        btnMultiplyTenEx2Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply10Fifth);
+            }
+        });
+        btnMultiplyTenEx3Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Fifth);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply10Fifth);
+            }
+        });
+        btnMultiplyTenEx1Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply10Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply10Final);
+
+            }
+        });
+        btnMultiplyTenEx2Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                switch (counter) {
+                    case 0:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply10Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply10Final);
+            }
+        });
+        btnMultiplyTenEx3Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply10Final);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                counter();
+                switch (counter) {
+                    case 0:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.6 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Δυστυχώς δεν βρήκες ούτε ένα");
+                        break;
+                    case 1:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 2:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.2 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Βρήκες μόνο : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 3:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        break;
+                    case 4:
+                        titleMultiply10Final.setTranslateX(WIDTH / 2.5 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Τα πήγες μέτρια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                    case 5:
+                        titleMultiply10Final.setTranslateX(WIDTH / 3 - title.getTitleWidth() / 2);
+                        titleMultiply10Final.setText("Μπράβο τα πήγες τέλεια : " + Integer.toString(counter) + " στα 5");
+                        PlaySound();
+                        break;
+                }
+                primaryStage.setScene(sceneMultiply10Final);
+            }
+        });
+//        Returns for 8
+        Return_Askisi1_multiply10.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply10Second.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply10Fifth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply10Third.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply10Fourth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Return_Askisi1_multiply10Final.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(rootMultiply);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneMultiply);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                counter = 0;
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
         //Scene, Stages
         rootMultiply1FinalPane.getChildren().addAll(imageViewMultiply1Final, titleMultiply1Final, Return_Askisi1_multiply1Final);
-        rootMultiply1.getChildren().addAll(imageViewMultiply1, titleMultiply1ExFirst, Return_Askisi1_multiply1, btnMultiplyFirstEx1, btnMultiplyFirstEx2, btnMultiplyFirstEx3);
-        rootMultiply1Second.getChildren().addAll(imageViewMultiply2, titleMultiply1Second, Return_Askisi1_multiply1Second, btnMultiplyFirstEx1Second, btnMultiplyFirstEx2Second, btnMultiplyFirstEx3Second);
-        rootMultiply1Third.getChildren().addAll(imageViewMultiply3, titleMultiply1Third, Return_Askisi1_multiply1Third, btnMultiplyFirstEx1Third, btnMultiplyFirstEx2Third, btnMultiplyFirstEx3Third);
-        rootMultiply1Fourth.getChildren().addAll(imageViewMultiply4, titleMultiply1Fourth, Return_Askisi1_multiply1Fourth, btnMultiplyFirstEx1Fourth, btnMultiplyFirstEx2Fourth, btnMultiplyFirstEx3Fourth);
-        rootMultiply1Fifth.getChildren().addAll(imageViewMultiply5, titleMultiply1Fifth, Return_Askisi1_multiply1Fifth, btnMultiplyFirstEx1Fifth, btnMultiplyFirstEx2Fifth, btnMultiplyFirstEx3Fifth);
+        rootMultiply1.getChildren().addAll(imageViewMultiplyFor1First, titleMultiply1First, Return_Askisi1_multiply1, btnMultiplyFirstEx1, btnMultiplyFirstEx2, btnMultiplyFirstEx3);
+        rootMultiply1Second.getChildren().addAll(imageViewMultiplyFor1Second, titleMultiply1Second, Return_Askisi1_multiply1Second, btnMultiplyFirstEx1Second, btnMultiplyFirstEx2Second, btnMultiplyFirstEx3Second);
+        rootMultiply1Third.getChildren().addAll(imageViewMultiplyFor1Third, titleMultiply1Third, Return_Askisi1_multiply1Third, btnMultiplyFirstEx1Third, btnMultiplyFirstEx2Third, btnMultiplyFirstEx3Third);
+        rootMultiply1Fourth.getChildren().addAll(imageViewMultiplyFor1Fourth, titleMultiply1Fourth, Return_Askisi1_multiply1Fourth, btnMultiplyFirstEx1Fourth, btnMultiplyFirstEx2Fourth, btnMultiplyFirstEx3Fourth);
+        rootMultiply1Fifth.getChildren().addAll(imageViewMultiplyFor1Fifth, titleMultiply1Fifth, Return_Askisi1_multiply1Fifth, btnMultiplyFirstEx1Fifth, btnMultiplyFirstEx2Fifth, btnMultiplyFirstEx3Fifth);
+        //Multiply for 2 scenes
+        rootMultiply2.getChildren().addAll(imageViewMultiplyFor2First, titleMultiply2First, Return_Askisi1_multiply2, btnMultiplySecondEx1, btnMultiplySecondEx2, btnMultiplySecondEx3);
+        rootMultiply2Second.getChildren().addAll(imageViewMultiplyFor2Second, titleMultiply2Second, Return_Askisi1_multiply2Second, btnMultiplySecondEx1Second, btnMultiplySecondEx2Second, btnMultiplySecondEx3Second);
+        rootMultiply2Third.getChildren().addAll(imageViewMultiplyFor2Third, titleMultiply2Third, Return_Askisi1_multiply2Third, btnMultiplySecondEx1Third, btnMultiplySecondEx2Third, btnMultiplySecondEx3Third);
+        rootMultiply2Fourth.getChildren().addAll(imageViewMultiplyFor2Fourth, titleMultiply2Fourth, Return_Askisi1_multiply2Fourth, btnMultiplySecondEx1Fourth, btnMultiplySecondEx2Fourth, btnMultiplySecondEx3Fourth);
+        rootMultiply2Fifth.getChildren().addAll(imageViewMultiplyFor2Fifth, titleMultiply2Fifth, Return_Askisi1_multiply2Fifth, btnMultiplySecondEx1Fifth, btnMultiplySecondEx2Fifth, btnMultiplySecondEx3Fifth);
+        rootMultiply2Final.getChildren().addAll(imageViewMultiply2Final, titleMultiply2Final, Return_Askisi1_multiply2Final);
+        //Multiply for 3 scenes
+        rootMultiply3.getChildren().addAll(imageViewMultiplyFor3First, titleMultiply3First, Return_Askisi1_multiply3, btnMultiplyThirdEx1, btnMultiplyThirdEx2, btnMultiplyThirdEx3);
+        rootMultiply3Second.getChildren().addAll(imageViewMultiplyFor3Second, titleMultiply3Second, Return_Askisi1_multiply3Second, btnMultiplyThirdEx1Second, btnMultiplyThirdEx2Second, btnMultiplyThirdEx3Second);
+        rootMultiply3Third.getChildren().addAll(imageViewMultiplyFor3Third, titleMultiply3Third, Return_Askisi1_multiply3Third, btnMultiplyThirdEx1Third, btnMultiplyThirdEx2Third, btnMultiplyThirdEx3Third);
+        rootMultiply3Fourth.getChildren().addAll(imageViewMultiplyFor3Fourth, titleMultiply3Fourth, Return_Askisi1_multiply3Fourth, btnMultiplyThirdEx1Fourth, btnMultiplyThirdEx2Fourth, btnMultiplyThirdEx3Fourth);
+        rootMultiply3Fifth.getChildren().addAll(imageViewMultiplyFor3Fifth, titleMultiply3Fifth, Return_Askisi1_multiply3Fifth, btnMultiplyThirdEx1Fifth, btnMultiplyThirdEx2Fifth, btnMultiplyThirdEx3Fifth);
+        rootMultiply3Final.getChildren().addAll(imageViewMultiply3Final, titleMultiply3Final, Return_Askisi1_multiply3Final);
+        //Multiply for 4 scenes
+        rootMultiply4.getChildren().addAll(imageViewMultiplyFor4First, titleMultiply4First, Return_Askisi1_multiply4, btnMultiplyFourthEx1, btnMultiplyFourthEx2, btnMultiplyFourthEx3);
+        rootMultiply4Second.getChildren().addAll(imageViewMultiplyFor4Second, titleMultiply4Second, Return_Askisi1_multiply4Second, btnMultiplyFourthEx1Second, btnMultiplyFourthEx2Second, btnMultiplyFourthEx3Second);
+        rootMultiply4Third.getChildren().addAll(imageViewMultiplyFor4Third, titleMultiply4Third, Return_Askisi1_multiply4Third, btnMultiplyFourthEx1Third, btnMultiplyFourthEx2Third, btnMultiplyFourthEx3Third);
+        rootMultiply4Fourth.getChildren().addAll(imageViewMultiplyFor4Fourth, titleMultiply4Fourth, Return_Askisi1_multiply4Fourth, btnMultiplyFourthEx1Fourth, btnMultiplyFourthEx2Fourth, btnMultiplyFourthEx3Fourth);
+        rootMultiply4Fifth.getChildren().addAll(imageViewMultiplyFor4Fifth, titleMultiply4Fifth, Return_Askisi1_multiply4Fifth, btnMultiplyFourthEx1Fifth, btnMultiplyFourthEx2Fifth, btnMultiplyFourthEx3Fifth);
+        rootMultiply4Final.getChildren().addAll(imageViewMultiply4Final, titleMultiply4Final, Return_Askisi1_multiply4Final);
+        //Multiply for 5 scenes
+        rootMultiply5.getChildren().addAll(imageViewMultiplyFor5First, titleMultiply5First, Return_Askisi1_multiply5, btnMultiplyFifthEx1, btnMultiplyFifthEx2, btnMultiplyFifthEx3);
+        rootMultiply5Second.getChildren().addAll(imageViewMultiplyFor5Second, titleMultiply5Second, Return_Askisi1_multiply5Second, btnMultiplyFifthEx1Second, btnMultiplyFifthEx2Second, btnMultiplyFifthEx3Second);
+        rootMultiply5Third.getChildren().addAll(imageViewMultiplyFor5Third, titleMultiply5Third, Return_Askisi1_multiply5Third, btnMultiplyFifthEx1Third, btnMultiplyFifthEx2Third, btnMultiplyFifthEx3Third);
+        rootMultiply5Fourth.getChildren().addAll(imageViewMultiplyFor5Fourth, titleMultiply5Fourth, Return_Askisi1_multiply5Fourth, btnMultiplyFifthEx1Fourth, btnMultiplyFifthEx2Fourth, btnMultiplyFifthEx3Fourth);
+        rootMultiply5Fifth.getChildren().addAll(imageViewMultiplyFor5Fifth, titleMultiply5Fifth, Return_Askisi1_multiply5Fifth, btnMultiplyFifthEx1Fifth, btnMultiplyFifthEx2Fifth, btnMultiplyFifthEx3Fifth);
+        rootMultiply5Final.getChildren().addAll(imageViewMultiply5Final, titleMultiply5Final, Return_Askisi1_multiply5Final);
+        //Multiply for 6 scenes
+        rootMultiply6.getChildren().addAll(imageViewMultiplyFor6First, titleMultiply6First, Return_Askisi1_multiply6, btnMultiplySixthEx1, btnMultiplySixthEx2, btnMultiplySixthEx3);
+        rootMultiply6Second.getChildren().addAll(imageViewMultiplyFor6Second, titleMultiply6Second, Return_Askisi1_multiply6Second, btnMultiplySixthEx1Second, btnMultiplySixthEx2Second, btnMultiplySixthEx3Second);
+        rootMultiply6Third.getChildren().addAll(imageViewMultiplyFor6Third, titleMultiply6Third, Return_Askisi1_multiply6Third, btnMultiplySixthEx1Third, btnMultiplySixthEx2Third, btnMultiplySixthEx3Third);
+        rootMultiply6Fourth.getChildren().addAll(imageViewMultiplyFor6Fourth, titleMultiply6Fourth, Return_Askisi1_multiply6Fourth, btnMultiplySixthEx1Fourth, btnMultiplySixthEx2Fourth, btnMultiplySixthEx3Fourth);
+        rootMultiply6Fifth.getChildren().addAll(imageViewMultiplyFor6Fifth, titleMultiply6Fifth, Return_Askisi1_multiply6Fifth, btnMultiplySixthEx1Fifth, btnMultiplySixthEx2Fifth, btnMultiplySixthEx3Fifth);
+        rootMultiply6Final.getChildren().addAll(imageViewMultiply6Final, titleMultiply6Final, Return_Askisi1_multiply6Final);
+        //Multiply for 7 scenes
+        rootMultiply7.getChildren().addAll(imageViewMultiplyFor7First, titleMultiply7First, Return_Askisi1_multiply7, btnMultiplySeventhEx1, btnMultiplySeventhEx2, btnMultiplySeventhEx3);
+        rootMultiply7Second.getChildren().addAll(imageViewMultiplyFor7Second, titleMultiply7Second, Return_Askisi1_multiply7Second, btnMultiplySeventhEx1Second, btnMultiplySeventhEx2Second, btnMultiplySeventhEx3Second);
+        rootMultiply7Third.getChildren().addAll(imageViewMultiplyFor7Third, titleMultiply7Third, Return_Askisi1_multiply7Third, btnMultiplySeventhEx1Third, btnMultiplySeventhEx2Third, btnMultiplySeventhEx3Third);
+        rootMultiply7Fourth.getChildren().addAll(imageViewMultiplyFor7Fourth, titleMultiply7Fourth, Return_Askisi1_multiply7Fourth, btnMultiplySeventhEx1Fourth, btnMultiplySeventhEx2Fourth, btnMultiplySeventhEx3Fourth);
+        rootMultiply7Fifth.getChildren().addAll(imageViewMultiplyFor7Fifth, titleMultiply7Fifth, Return_Askisi1_multiply7Fifth, btnMultiplySeventhEx1Fifth, btnMultiplySeventhEx2Fifth, btnMultiplySeventhEx3Fifth);
+        rootMultiply7Final.getChildren().addAll(imageViewMultiply7Final, titleMultiply7Final, Return_Askisi1_multiply7Final);
+        //Multiply for 8 scenes
+        rootMultiply8.getChildren().addAll(imageViewMultiplyFor8First, titleMultiply8First, Return_Askisi1_multiply8, btnMultiplyEightEx1, btnMultiplyEightEx2, btnMultiplyEightEx3);
+        rootMultiply8Second.getChildren().addAll(imageViewMultiplyFor8Second, titleMultiply8Second, Return_Askisi1_multiply8Second, btnMultiplyEightEx1Second, btnMultiplyEightEx2Second, btnMultiplyEightEx3Second);
+        rootMultiply8Third.getChildren().addAll(imageViewMultiplyFor8Third, titleMultiply8Third, Return_Askisi1_multiply8Third, btnMultiplyEightEx1Third, btnMultiplyEightEx2Third, btnMultiplyEightEx3Third);
+        rootMultiply8Fourth.getChildren().addAll(imageViewMultiplyFor8Fourth, titleMultiply8Fourth, Return_Askisi1_multiply8Fourth, btnMultiplyEightEx1Fourth, btnMultiplyEightEx2Fourth, btnMultiplyEightEx3Fourth);
+        rootMultiply8Fifth.getChildren().addAll(imageViewMultiplyFor8Fifth, titleMultiply8Fifth, Return_Askisi1_multiply8Fifth, btnMultiplyEightEx1Fifth, btnMultiplyEightEx2Fifth, btnMultiplyEightEx3Fifth);
+        rootMultiply8Final.getChildren().addAll(imageViewMultiply8Final, titleMultiply8Final, Return_Askisi1_multiply8Final);
+        //Multiply for 9 scenes
+        rootMultiply9.getChildren().addAll(imageViewMultiplyFor9First, titleMultiply9First, Return_Askisi1_multiply9, btnMultiplyNineEx1, btnMultiplyNineEx2, btnMultiplyNineEx3);
+        rootMultiply9Second.getChildren().addAll(imageViewMultiplyFor9Second, titleMultiply9Second, Return_Askisi1_multiply9Second, btnMultiplyNineEx1Second, btnMultiplyNineEx2Second, btnMultiplyNineEx3Second);
+        rootMultiply9Third.getChildren().addAll(imageViewMultiplyFor9Third, titleMultiply9Third, Return_Askisi1_multiply9Third, btnMultiplyNineEx1Third, btnMultiplyNineEx2Third, btnMultiplyNineEx3Third);
+        rootMultiply9Fourth.getChildren().addAll(imageViewMultiplyFor9Fourth, titleMultiply9Fourth, Return_Askisi1_multiply9Fourth, btnMultiplyNineEx1Fourth, btnMultiplyNineEx2Fourth, btnMultiplyNineEx3Fourth);
+        rootMultiply9Fifth.getChildren().addAll(imageViewMultiplyFor9Fifth, titleMultiply9Fifth, Return_Askisi1_multiply9Fifth, btnMultiplyNineEx1Fifth, btnMultiplyNineEx2Fifth, btnMultiplyNineEx3Fifth);
+        rootMultiply9Final.getChildren().addAll(imageViewMultiply9Final, titleMultiply9Final, Return_Askisi1_multiply9Final);
+        //Multiply for 10 scenes
+        rootMultiply10.getChildren().addAll(imageViewMultiplyFor10First, titleMultiply10First, Return_Askisi1_multiply10, btnMultiplyTenEx1, btnMultiplyTenEx2, btnMultiplyTenEx3);
+        rootMultiply10Second.getChildren().addAll(imageViewMultiplyFor10Second, titleMultiply10Second, Return_Askisi1_multiply10Second, btnMultiplyTenEx1Second, btnMultiplyTenEx2Second, btnMultiplyTenEx3Second);
+        rootMultiply10Third.getChildren().addAll(imageViewMultiplyFor10Third, titleMultiply10Third, Return_Askisi1_multiply10Third, btnMultiplyTenEx1Third, btnMultiplyTenEx2Third, btnMultiplyTenEx3Third);
+        rootMultiply10Fourth.getChildren().addAll(imageViewMultiplyFor10Fourth, titleMultiply10Fourth, Return_Askisi1_multiply10Fourth, btnMultiplyTenEx1Fourth, btnMultiplyTenEx2Fourth, btnMultiplyTenEx3Fourth);
+        rootMultiply10Fifth.getChildren().addAll(imageViewMultiplyFor10Fifth, titleMultiply10Fifth, Return_Askisi1_multiply10Fifth, btnMultiplyTenEx1Fifth, btnMultiplyTenEx2Fifth, btnMultiplyTenEx3Fifth);
+        rootMultiply10Final.getChildren().addAll(imageViewMultiply10Final, titleMultiply10Final, Return_Askisi1_multiply10Final);
+
         rootMultiply.getChildren().addAll(imageView4, titleMultiply, btnReturnOnMultiply, btnMultiplySelect1, btnMultiplySelect2, btnMultiplySelect3, btnMultiplySelect4, btnMultiplySelect5,
                 btnMultiplySelect6, btnMultiplySelect7, btnMultiplySelect8, btnMultiplySelect9, btnMultiplySelect10);
         rootAdd.getChildren().addAll(imageView3, titleAdd, btnReturnOnAdd, text, text2, text3, text4, btnAdd1, btnAddCorrentAnswerOnFirst, btnAdd3);
