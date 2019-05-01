@@ -555,7 +555,7 @@ public class MathsFX extends Application {
     private Text text3 = new CreateTextForNumbers(650, 370, "12", Color.RED, 70);
     private Text text4 = new CreateTextForNumbers(750, 370, "=", Color.RED, 70);
 
-    //Αλεξ
+    //Αλεξ & Γιώργος
     Button help_Askisi2_prosthesi = new CreateHelpButton(170, 0);
     Button Continue_Askisi2_prosthesi = new ButtonForContinue("         Συνέχεια ->        ");
     Button Continue_Askisi3_prosthesi = new ButtonForContinue("         Συνέχεια ->         ");
@@ -704,7 +704,65 @@ public class MathsFX extends Application {
     ImageView Askisi4_sugkritis_Solution = new ImageView(Askisi4_sugkritis_Solution_Image);
     private Button btnReturn_Askisi4_sugkritis_Solution = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
 
-    //SceneAle scene2, scene3, scene4, scene5;
+    //variables Askisi1 Diairesi
+    Image Askisi1_diairesi_Image = new Image(getClass().getResourceAsStream("/Askisi1_diairesi.png"));
+    ImageView Askisi1_diairesi = new ImageView(Askisi1_diairesi_Image);
+    private Button Askisi1_diairesi_choice1 = new CreateButtonsAddWithMinWidthAndSize("/Askisi1_diairesi_epilogi1.png", 230, 30, 150, 150, 150, 150);
+    private Button Askisi1_diairesi_choice2_Correct = new CreateButtonsAddWithMinWidthAndSize("/Askisi1_diairesi_epilogi2.png", 10, 30, 150, 150, 150, 150);
+    private Button Askisi1_diairesi_choice3 = new CreateButtonsAddWithMinWidthAndSize("/Askisi1_diairesi_epilogi3.png", -230, 30, 150, 150, 150, 150);
+    private Button btnReturn_Askisi1_diairesi = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
+    Button help_Askisi1_diairesi = new CreateHelpButton(160, 0);
+    
+    //variables Askisi1 Diairesi Solution
+    Image Askisi1_diairesi_Solution_image = new Image(getClass().getResourceAsStream("/Askisi1_diairesi_Solution.png"));
+    ImageView Askisi1_diairesi_Solution = new ImageView(Askisi1_diairesi_Solution_image);
+    private Button btnReturn_Askisi1_diairesi_Solution = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
+    Button Continue_Askisi1_diairesi = new ButtonForContinue("         Συνέχεια ->         ");
+    
+    //variables Askisi2 Diairesi
+    Image Askisi2_diairesi_image = new Image(getClass().getResourceAsStream("/Askisi2_diairesi.png"));
+    ImageView Askisi2_diairesi = new ImageView(Askisi2_diairesi_image);
+    private Button Askisi2_diairesi_choice1_Correct = new CreateButtonsAddWithMinWidthAndSize("/Askisi2_diairesi_epilogi1.png", 230, 30, 150, 150, 150, 150);
+    private Button Askisi2_diairesi_choice2 = new CreateButtonsAddWithMinWidthAndSize("/Askisi2_diairesi_epilogi2.png", 10, 30, 150, 150, 150, 150);
+    private Button Askisi2_diairesi_choice3 = new CreateButtonsAddWithMinWidthAndSize("/Askisi2_diairesi_epilogi3.png", -230, 30, 150, 150, 150, 150);
+    private Button btnReturn_Askisi2_diairesi = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
+    Button help_Askisi2_diairesi = new CreateHelpButton(160, 0);
+    
+    //variables Askisi2 Diairesi Solution
+    Image Askisi2_diairesi_Solution_image = new Image(getClass().getResourceAsStream("/Askisi2_diairesi_Solution.png"));
+    ImageView Askisi2_diairesi_Solution = new ImageView(Askisi2_diairesi_Solution_image);
+    private Button btnReturn_Askisi2_diairesi_Solution = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
+    Button Continue_Askisi2_diairesi = new ButtonForContinue("         Συνέχεια ->         ");
+    
+    //variables Askisi3 Diairesi
+    Image Askisi3_diairesi_image = new Image(getClass().getResourceAsStream("/Askisi3_diairesi.png"));
+    ImageView Askisi3_diairesi = new ImageView(Askisi3_diairesi_image);
+    private Button Askisi3_diairesi_choice1 = new CreateButtonsAddWithMinWidthAndSize("/Askisi3_diairesi_epilogi1.png", 230, 30, 150, 150, 150, 150);
+    private Button Askisi3_diairesi_choice2 = new CreateButtonsAddWithMinWidthAndSize("/Askisi3_diairesi_epilogi2.png", 10, 30, 150, 150, 150, 150);
+    private Button Askisi3_diairesi_choice3_Correct = new CreateButtonsAddWithMinWidthAndSize("/Askisi3_diairesi_epilogi3.png", -230, 30, 150, 150, 150, 150);
+    private Button btnReturn_Askisi3_diairesi = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
+    Button help_Askisi3_diairesi = new CreateHelpButton(160, 0);
+    
+    //variables Askisi3 Diairesi Solution
+    Image Askisi3_diairesi_Solution_image = new Image(getClass().getResourceAsStream("/Askisi3_diairesi_Solution.png"));
+    ImageView Askisi3_diairesi_Solution = new ImageView(Askisi3_diairesi_Solution_image);
+    private Button btnReturn_Askisi3_diairesi_Solution = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
+    Button Continue_Askisi3_diairesi = new ButtonForContinue("         Συνέχεια ->         ");
+    
+    //variables Askisi4 Diairesi
+    Image Askisi4_diairesi_image = new Image(getClass().getResourceAsStream("/Askisi4_diairesi.png"));
+    ImageView Askisi4_diairesi = new ImageView(Askisi4_diairesi_image);
+    private Button Askisi4_diairesi_choice1_Correct = new CreateButtonsAddWithMinWidthAndSize("/Askisi4_diairesi_epilogi1.png", 230, 30, 150, 150, 150, 150);
+    private Button Askisi4_diairesi_choice2 = new CreateButtonsAddWithMinWidthAndSize("/Askisi4_diairesi_epilogi2.png", 10, 30, 150, 150, 150, 150);
+    private Button Askisi4_diairesi_choice3 = new CreateButtonsAddWithMinWidthAndSize("/Askisi4_diairesi_epilogi3.png", -230, 30, 150, 150, 150, 150);
+    private Button btnReturn_Askisi4_diairesi = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
+    Button help_Askisi4_diairesi = new CreateHelpButton(160, 0);
+    
+    //variables Askisi4 Diairesi Solution
+    Image Askisi4_diairesi_Solution_image = new Image(getClass().getResourceAsStream("/Askisi4_diairesi_Solution.png"));
+    ImageView Askisi4_diairesi_Solution = new ImageView(Askisi4_diairesi_Solution_image);
+    private Button btnReturn_Askisi4_diairesi_Solution = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
+    
     Stage Window;
 
     private void addLine(double x, double y) {
@@ -1416,7 +1474,7 @@ public class MathsFX extends Application {
         btnMultiplySelect1.setScaleX(1.5);
         btnMultiplySelect1.setScaleY(1.5);
 
-        //Αλεξ
+        //Αλεξ & Γιώργος
         Askisi1_prosthesi = new ImageView(Askisi1_prosthesi_Image);
         Askisi2_prosthesi = new ImageView(Askisi2_prosthesi_Image);
         Askisi3_prosthesi = new ImageView(Askisi3_prosthesi_Image);
@@ -1467,6 +1525,22 @@ public class MathsFX extends Application {
         Image Askisi4_sugkritis_help_image = new Image("/Askisi4_sugkritis_help.png");
         ImageView Askisi4_sugkritis_help = new ImageView(Askisi4_sugkritis_help_image);
 
+        //Askisi1 div help
+        Image Askisi1_diairesi_help_image = new Image("/Askisi1_diairesi_help.png");
+        ImageView Askisi1_diairesi_help = new ImageView(Askisi1_diairesi_help_image);
+        
+        //Askisi2 div help
+        Image Askisi2_diairesi_help_image = new Image("/Askisi2_diairesi_help.png");
+        ImageView Askisi2_diairesi_help = new ImageView(Askisi2_diairesi_help_image);
+        
+        //Askisi3 div help
+        Image Askisi3_diairesi_help_image = new Image("/Askisi3_diairesi_help.png");
+        ImageView Askisi3_diairesi_help = new ImageView(Askisi3_diairesi_help_image);
+        
+        //Askisi4 div help
+        Image Askisi4_diairesi_help_image = new Image("/Askisi4_diairesi_help.png");
+        ImageView Askisi4_diairesi_help = new ImageView(Askisi4_diairesi_help_image);
+                
         //Layouts gia prosthesi
         StackPane Layout_Askisi2_prosthesi = new StackPane();
         StackPane Layout_Askisi2_prosthesi_Solution = new StackPane();
@@ -1495,6 +1569,16 @@ public class MathsFX extends Application {
         StackPane Layout_Askisi4_sugkritis = new StackPane();
         StackPane Layout_Askisi4_sugkritis_Solution = new StackPane();
 
+        //Layouts gia Diairesi
+        StackPane Layout_Askisi1_diairesi = new StackPane();
+        StackPane Layout_Askisi1_diairesi_Solution = new StackPane();
+        StackPane Layout_Askisi2_diairesi = new StackPane();
+        StackPane Layout_Askisi2_diairesi_Solution = new StackPane();
+        StackPane Layout_Askisi3_diairesi = new StackPane();
+        StackPane Layout_Askisi3_diairesi_Solution = new StackPane();
+        StackPane Layout_Askisi4_diairesi = new StackPane();
+        StackPane Layout_Askisi4_diairesi_Solution = new StackPane();
+        
         //Adding Elements in Layouts gia prosthesi
         Layout_Askisi2_prosthesi.getChildren().addAll(Askisi1_prosthesi, Number61_Askisi2_prosthesi, Number77_Askisi2_Prosthesi, Number55_Askisi2_prosthesi, Return_Askisi2_prosthesi, help_Askisi2_prosthesi);
         Layout_Askisi2_prosthesi_Solution.getChildren().addAll(ScaleSolution, Return_Askisi2_prosthesi_Solution, Continue_Askisi2_prosthesi);
@@ -1523,6 +1607,16 @@ public class MathsFX extends Application {
         Layout_Askisi4_sugkritis.getChildren().addAll(Askisi4_sugkritis, Askisi4_sugkritis_choice1, Askisi4_sugkritis_choice2, Askisi4_sugkritis_choice3_Correct, btnReturn_Askisi4_sugkritis, help_Askisi4_sugkritis);
         Layout_Askisi4_sugkritis_Solution.getChildren().addAll(Askisi4_sugkritis_Solution, btnReturn_Askisi4_sugkritis_Solution);
 
+        //Adding Elements in Layouts gia diairesi
+        Layout_Askisi1_diairesi.getChildren().addAll(Askisi1_diairesi, Askisi1_diairesi_choice1, Askisi1_diairesi_choice2_Correct, Askisi1_diairesi_choice3, btnReturn_Askisi1_diairesi, help_Askisi1_diairesi);
+        Layout_Askisi1_diairesi_Solution.getChildren().addAll(Askisi1_diairesi_Solution, btnReturn_Askisi1_diairesi_Solution, Continue_Askisi1_diairesi);
+        Layout_Askisi2_diairesi.getChildren().addAll(Askisi2_diairesi, Askisi2_diairesi_choice1_Correct, Askisi2_diairesi_choice2, Askisi2_diairesi_choice3, btnReturn_Askisi2_diairesi, help_Askisi2_diairesi);
+        Layout_Askisi2_diairesi_Solution.getChildren().addAll(Askisi2_diairesi_Solution, btnReturn_Askisi2_diairesi_Solution, Continue_Askisi2_diairesi);
+        Layout_Askisi3_diairesi.getChildren().addAll(Askisi3_diairesi, Askisi3_diairesi_choice1, Askisi3_diairesi_choice2, Askisi3_diairesi_choice3_Correct, btnReturn_Askisi3_diairesi, help_Askisi3_diairesi);
+        Layout_Askisi3_diairesi_Solution.getChildren().addAll(Askisi3_diairesi_Solution, btnReturn_Askisi3_diairesi_Solution, Continue_Askisi3_diairesi);
+        Layout_Askisi4_diairesi.getChildren().addAll(Askisi4_diairesi, Askisi4_diairesi_choice1_Correct, Askisi4_diairesi_choice2, Askisi4_diairesi_choice3, btnReturn_Askisi4_diairesi, help_Askisi4_diairesi);
+        Layout_Askisi4_diairesi_Solution.getChildren().addAll(Askisi4_diairesi_Solution, btnReturn_Askisi4_diairesi_Solution);
+                
         //Scenes gia prosthesi
         Scene sceneAddFirst = new Scene(Layout_Askisi2_prosthesi, 1164, 365);
         Scene sceneAddFirstCorrect = new Scene(Layout_Askisi2_prosthesi_Solution, 1164, 365);
@@ -1551,6 +1645,16 @@ public class MathsFX extends Application {
         Scene sceneComFourth = new Scene(Layout_Askisi4_sugkritis, 1164, 500);
         Scene sceneComFourthCorrect = new Scene(Layout_Askisi4_sugkritis_Solution, 1164, 500);
 
+        //Scenes gia diairesi
+        Scene sceneDivFirst = new Scene(Layout_Askisi1_diairesi, 1164, 500);
+        Scene sceneDivFirstCorrect = new Scene(Layout_Askisi1_diairesi_Solution, 1164, 500);
+        Scene sceneDivSecond = new Scene(Layout_Askisi2_diairesi, 1164, 500);
+        Scene sceneDivSecondCorrect = new Scene(Layout_Askisi2_diairesi_Solution, 1164, 500);
+        Scene sceneDivThird = new Scene(Layout_Askisi3_diairesi, 1164, 500);
+        Scene sceneDivThirdCorrect = new Scene(Layout_Askisi3_diairesi_Solution, 1164, 500);
+        Scene sceneDivFourth = new Scene(Layout_Askisi4_diairesi, 1164, 500);
+        Scene sceneDivFourthCorrect = new Scene(Layout_Askisi4_diairesi_Solution, 1164, 500);
+        
         //Prosthesi Button Actions
         Number61_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
         Number55_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
@@ -2081,7 +2185,7 @@ public class MathsFX extends Application {
                 });
             }
         });
-
+        
         //Sugkritis Button Actions
         Askisi1_sugkritis_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
         Askisi1_sugkritis_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
@@ -2384,7 +2488,327 @@ public class MathsFX extends Application {
                 });
             }
         });
+        
+        //Koumpi Diairesi Action
+        btnDivide.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi1_diairesi);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneDivFirst);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
 
+        //Diairesi Button Actions
+        Askisi1_diairesi_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi1_diairesi_choice2_Correct.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi1_diairesi_Solution);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneDivFirstCorrect);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Askisi1_diairesi_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        help_Askisi1_diairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi1_diairesi_help));
+        btnReturn_Askisi1_diairesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        btnReturn_Askisi1_diairesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Continue_Askisi1_diairesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi2_diairesi);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneDivSecond);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Askisi2_diairesi_choice1_Correct.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi2_diairesi_Solution);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneDivSecondCorrect);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Askisi2_diairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi2_diairesi_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        help_Askisi2_diairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi2_diairesi_help));
+        btnReturn_Askisi2_diairesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });        
+        btnReturn_Askisi2_diairesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Continue_Askisi2_diairesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi3_diairesi);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneDivThird);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Askisi3_diairesi_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi3_diairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi3_diairesi_choice3_Correct.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi3_diairesi_Solution);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneDivThirdCorrect);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        help_Askisi3_diairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi3_diairesi_help));
+        btnReturn_Askisi3_diairesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        btnReturn_Askisi3_diairesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Continue_Askisi3_diairesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi4_diairesi);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneDivFourth);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Askisi4_diairesi_choice1_Correct.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(Layout_Askisi4_diairesi_Solution);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(sceneDivFourthCorrect);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        Askisi4_diairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi4_diairesi_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        help_Askisi4_diairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi2_diairesi_help));
+        btnReturn_Askisi4_diairesi.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });        
+        btnReturn_Askisi4_diairesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                FadeTransition ft = new FadeTransition(Duration.millis(1000));
+                ft.setNode(root);
+                ft.setFromValue(0);
+                ft.setToValue(1);
+                ft.play();
+                primaryStage.setScene(scene);
+                rootAdd.getChildren().removeAll(t, btnNext);
+                ft.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        btnAddCorrentAnswerOnFirst.setTranslateX(535);
+                        btnAddCorrentAnswerOnFirst.setTranslateY(450);
+                    }
+                });
+            }
+        });
+        
         //alignments prosthesi
         Layout_Askisi2_prosthesi.setAlignment(Number61_Askisi2_prosthesi, Pos.TOP_LEFT);
         Layout_Askisi2_prosthesi.setAlignment(Number77_Askisi2_Prosthesi, Pos.TOP_CENTER);
@@ -2465,6 +2889,57 @@ public class MathsFX extends Application {
         Layout_Askisi4_sugkritis.setAlignment(help_Askisi4_sugkritis, Pos.TOP_LEFT);
         Layout_Askisi4_sugkritis_Solution.setAlignment(btnReturn_Askisi4_sugkritis_Solution, Pos.TOP_CENTER);
 
+        //Alignments Diairesi
+        Layout_Askisi1_diairesi.setAlignment(Askisi1_diairesi_choice1, Pos.TOP_LEFT);
+        Layout_Askisi1_diairesi.setAlignment(Askisi1_diairesi_choice2_Correct, Pos.TOP_CENTER);
+        Layout_Askisi1_diairesi.setAlignment(Askisi1_diairesi_choice3, Pos.TOP_RIGHT);
+        Layout_Askisi1_diairesi.setAlignment(btnReturn_Askisi1_diairesi, Pos.TOP_LEFT);
+        Layout_Askisi1_diairesi.setAlignment(help_Askisi1_diairesi, Pos.TOP_LEFT);
+        Layout_Askisi1_diairesi_Solution.setAlignment(btnReturn_Askisi1_diairesi_Solution, Pos.TOP_LEFT);
+        Layout_Askisi1_diairesi_Solution.setAlignment(Continue_Askisi1_diairesi, Pos.TOP_RIGHT);
+        Layout_Askisi2_diairesi.setAlignment(Askisi2_diairesi_choice1_Correct, Pos.TOP_LEFT);
+        Layout_Askisi2_diairesi.setAlignment(Askisi2_diairesi_choice2, Pos.TOP_CENTER);
+        Layout_Askisi2_diairesi.setAlignment(Askisi2_diairesi_choice3, Pos.TOP_RIGHT);
+        Layout_Askisi2_diairesi.setAlignment(btnReturn_Askisi2_diairesi, Pos.TOP_LEFT);
+        Layout_Askisi2_diairesi.setAlignment(help_Askisi2_diairesi, Pos.TOP_LEFT);
+        Layout_Askisi2_diairesi_Solution.setAlignment(btnReturn_Askisi2_diairesi_Solution, Pos.TOP_LEFT);
+        Layout_Askisi2_diairesi_Solution.setAlignment(Continue_Askisi2_diairesi, Pos.TOP_RIGHT);
+        Layout_Askisi3_diairesi.setAlignment(Askisi3_diairesi_choice1, Pos.TOP_LEFT);
+        Layout_Askisi3_diairesi.setAlignment(Askisi3_diairesi_choice2, Pos.TOP_CENTER);
+        Layout_Askisi3_diairesi.setAlignment(Askisi3_diairesi_choice3_Correct, Pos.TOP_RIGHT);
+        Layout_Askisi3_diairesi.setAlignment(btnReturn_Askisi3_diairesi, Pos.TOP_LEFT);
+        Layout_Askisi3_diairesi.setAlignment(help_Askisi3_diairesi, Pos.TOP_LEFT);
+        Layout_Askisi3_diairesi_Solution.setAlignment(btnReturn_Askisi3_diairesi_Solution, Pos.TOP_LEFT);
+        Layout_Askisi3_diairesi_Solution.setAlignment(Continue_Askisi3_diairesi, Pos.TOP_RIGHT);
+        Layout_Askisi4_diairesi.setAlignment(Askisi4_diairesi_choice1_Correct, Pos.TOP_LEFT);
+        Layout_Askisi4_diairesi.setAlignment(Askisi4_diairesi_choice2, Pos.TOP_CENTER);
+        Layout_Askisi4_diairesi.setAlignment(Askisi4_diairesi_choice3, Pos.TOP_RIGHT);
+        Layout_Askisi4_diairesi.setAlignment(btnReturn_Askisi4_diairesi, Pos.TOP_LEFT);
+        Layout_Askisi4_diairesi.setAlignment(help_Askisi4_diairesi, Pos.TOP_LEFT);
+        Layout_Askisi4_diairesi_Solution.setAlignment(btnReturn_Askisi4_diairesi_Solution, Pos.TOP_CENTER);
+        
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        //-------------------------------------------------------------
+        
+        
         btnReturnMine.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
