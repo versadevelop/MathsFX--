@@ -223,13 +223,13 @@ public class MathsFX extends Application {
     Scene sceneAdd = new Scene(rootAdd, WIDTH - 135, HEIGHT);
 
     //Buttons of MainMenu
-    private Button btnLearn = new CreateButton("      Εκμάθηση         ", lineX + 10, lineY, -1);
-    private Button btnAdd = new CreateButton("       Πρόσθεση        ", lineX + 10, lineY + 10, -1);
-    private Button btnMinus = new CreateButton("       Αφαίρεση         ", lineX + 10, lineY + 20, -1);
-    private Button btnCompare = new CreateButton("        Σύγκριση         ", lineX + 10, lineY + 30, -1);
-    private Button btnMultiply = new CreateButton(" Πολλαπλασιασμός ", lineX + 10, lineY + 40, -1);
-    private Button btnDivide = new CreateButton("        Διαίρεση         ", lineX + 10, lineY + 50, -1);
-    private Button btnExit = new CreateButton("         Εξόδος          ", lineX + 10, lineY + 60, -1);
+    private Button btnLearn = new CreateButton("      Εκμάθηση         ", lineX + 10, lineY, -2);
+    private Button btnAdd = new CreateButton("       Πρόσθεση        ", lineX + 10, lineY + 10, -2);
+    private Button btnMinus = new CreateButton("       Αφαίρεση         ", lineX + 10, lineY + 20, -2);
+    private Button btnCompare = new CreateButton("        Σύγκριση         ", lineX + 10, lineY + 30, -2);
+    private Button btnMultiply = new CreateButton(" Πολλαπλασιασμός ", lineX + 10, lineY + 40, -2);
+    private Button btnDivide = new CreateButton("        Διαίρεση         ", lineX + 10, lineY + 50, -2);
+    private Button btnExit = new CreateButton("         Εξόδος          ", lineX + 10, lineY + 60, -2);
     private Button btnReturnMine = new CreateReturnButton("   <-  Επιστροφή     ", 0, 0);
     private Button btnReturnOnAdd = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
     private Button btnReturnOnMultiply = new CreateReturnButton("   <-  Επιστροφή      ", 0, 0);
@@ -774,7 +774,7 @@ public class MathsFX extends Application {
     }
 
     public static void startAnimationButton(Button b) {
-        ScaleTransition st = new ScaleTransition(Duration.millis(4000), b);
+        ScaleTransition st = new ScaleTransition(Duration.millis(5000), b);
         st.setToY(1);
         st.play();
         b.setCache(true);
@@ -782,7 +782,7 @@ public class MathsFX extends Application {
     }
 
     private void startAnimationLine() {
-        ScaleTransition st = new ScaleTransition(Duration.millis(1900), line);
+        ScaleTransition st = new ScaleTransition(Duration.millis(2900), line);
         st.setToY(1);
         st.play();
         line.setCache(true);
