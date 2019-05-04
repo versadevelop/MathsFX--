@@ -915,13 +915,13 @@ public class MathsFX extends Application {
     
     //Sound for Help
     public void PlayHelp() {
-        AudioClip Sound = new AudioClip(Paths.get("src/Pop_clip.mp3").toUri().toString());
-        Sound.play(0.80);
+        AudioClip sEffect = new AudioClip(this.getClass().getResource("Pop_clip.mp3").toExternalForm());
+        sEffect.play(0.80);
     }
     //Sound for Wrong Answers
     public void PlayWrong() {
-        AudioClip Sound = new AudioClip(Paths.get("src/Sad_clip.mp3").toUri().toString());
-        Sound.play(0.50);
+        AudioClip sEffect = new AudioClip(this.getClass().getResource("Sad_clip.mp3").toExternalForm());
+        sEffect.play(0.50);
     }
     private Text t = new Text("Μπράβο μικρέ");
 
