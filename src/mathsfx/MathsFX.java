@@ -8,6 +8,7 @@ package mathsfx;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.nio.file.Paths;
 import javafx.animation.FadeTransition;
 import javafx.animation.Interpolator;
 import javafx.animation.KeyFrame;
@@ -911,7 +912,17 @@ public class MathsFX extends Application {
         sEffect.setVolume(0.35);
         sEffect.play();
     }
-
+    
+    //Sound for Help
+    public void PlayHelp() {
+        AudioClip Sound = new AudioClip(Paths.get("src/Pop_clip.mp3").toUri().toString());
+        Sound.play(0.80);
+    }
+    //Sound for Wrong Answers
+    public void PlayWrong() {
+        AudioClip Sound = new AudioClip(Paths.get("src/Sad_clip.mp3").toUri().toString());
+        Sound.play(0.50);
+    }
     private Text t = new Text("Μπράβο μικρέ");
 
     @Override
@@ -1656,9 +1667,27 @@ public class MathsFX extends Application {
         Scene sceneDivFourthCorrect = new Scene(Layout_Askisi4_diairesi_Solution, 1164, 500);
         
         //Prosthesi Button Actions
-        Number61_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        Number55_Askisi2_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        help_Askisi2_prosthesi.setOnAction(e -> Help.display("Βοήθεια", Scale));
+        Number61_Askisi2_prosthesi.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Number55_Askisi2_prosthesi.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        help_Askisi2_prosthesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help.display("Βοήθεια", Scale); 
+            }
+        });
         Number77_Askisi2_Prosthesi.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -1679,9 +1708,27 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Number9_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        Number5_Askisi3_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        help_Askisi3_prosthesi.setOnAction(e -> Help2.display("Βοήθεια", "Το κάθε δάχτυλο είναι μια μονάδα!"));
+        Number9_Askisi3_prosthesi.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Number5_Askisi3_prosthesi.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        help_Askisi3_prosthesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help2.display("Βοήθεια", "Το κάθε δάχτυλο είναι μια μονάδα!");
+            }
+        });
         Number7_Askisi3_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -1702,8 +1749,20 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Number49_Askisi4_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        Number70_Askisi4_prosthesi.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Number49_Askisi4_prosthesi.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Number70_Askisi4_prosthesi.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
         Number65_Askisi4_prosthesi.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -1724,7 +1783,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        help_Askisi4_prosthesi.setOnAction(e -> Help3.display("Βοήθεια", Help3_1, Help3_2));
+        help_Askisi4_prosthesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help3.display("Βοήθεια", Help3_1, Help3_2);
+            }
+        });
         Return_Askisi4_prosthesi_Solution.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -1862,18 +1927,90 @@ public class MathsFX extends Application {
         });
 
         //afairesi Button Actions
-        Askisi1_afairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
-        Askisi1_afairesi_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
-        help_Askisi1_afairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", "Το κάθε παράθυρο χωράει 3 άτομα!"));
-        Askisi2_afairesi_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
-        Askisi2_afairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
-        help_Askisi2_afairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi2_afairesi_help));
-        Askisi3_afairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
-        Askisi3_afairesi_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
-        help_Askisi3_afairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi3_afairesi_help));
-        Askisi4_afairesi_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
-        Askisi4_afairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Απάντηση", "Ξαναπροσπάθησε!"));
-        help_Askisi4_afairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi4_afairesi_help));
+        Askisi1_afairesi_choice2.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Askisi1_afairesi_choice3.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        help_Askisi1_afairesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", "Το κάθε παράθυρο χώραει 3 άτομα!");
+            }
+        });
+        Askisi2_afairesi_choice1.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Askisi2_afairesi_choice2.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        help_Askisi2_afairesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi2_afairesi_help); 
+            }
+        });
+        Askisi3_afairesi_choice2.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Askisi3_afairesi_choice3.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        help_Askisi3_afairesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi3_afairesi_help);
+            }
+        });
+        Askisi4_afairesi_choice1.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Askisi4_afairesi_choice2.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        help_Askisi4_afairesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi4_afairesi_help);  
+            }
+        });
 
         btnReturn_Askisi1_afairesi.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -2187,8 +2324,20 @@ public class MathsFX extends Application {
         });
         
         //Sugkritis Button Actions
-        Askisi1_sugkritis_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        Askisi1_sugkritis_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi1_sugkritis_choice1.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Askisi1_sugkritis_choice2.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
         Askisi1_sugkritis_choice3_Correct.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2209,7 +2358,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        help_Askisi1_sugkritis.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi1_sugkritis_help));
+        help_Askisi1_sugkritis.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi1_sugkritis_help);                
+            }
+        });
         btnReturn_Askisi1_sugkritis.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2267,7 +2422,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Askisi2_sugkritis_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi2_sugkritis_choice1.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
         Askisi2_sugkritis_choice2_Correct.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2288,7 +2449,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Askisi2_sugkritis_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi2_sugkritis_choice3.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
         btnReturn_Askisi2_sugkritis.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2308,7 +2475,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        help_Askisi2_sugkritis.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi2_sugkritis_help));
+        help_Askisi2_sugkritis.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi2_sugkritis_help);               
+            }
+        });
         btnReturn_Askisi2_sugkritis_Solution.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2347,7 +2520,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Askisi3_sugkritis_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi3_sugkritis_choice1.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
         Askisi3_sugkritis_choice2_Correct.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2368,7 +2547,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Askisi3_sugkritis_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi3_sugkritis_choice3.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
         btnReturn_Askisi3_sugkritis.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2388,7 +2573,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        help_Askisi3_sugkritis.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi3_sugkritis_help));
+        help_Askisi3_sugkritis.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi3_sugkritis_help);              
+            }
+        });
         btnReturn_Askisi3_sugkritis_Solution.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2427,8 +2618,20 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Askisi4_sugkritis_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        Askisi4_sugkritis_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi4_sugkritis_choice1.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Askisi4_sugkritis_choice2.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
         Askisi4_sugkritis_choice3_Correct.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2449,7 +2652,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        help_Askisi4_sugkritis.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi4_sugkritis_help));
+        help_Askisi4_sugkritis.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi4_sugkritis_help);           
+            }
+        });
         btnReturn_Askisi4_sugkritis.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2511,7 +2720,13 @@ public class MathsFX extends Application {
         });
 
         //Diairesi Button Actions
-        Askisi1_diairesi_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi1_diairesi_choice1.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
         Askisi1_diairesi_choice2_Correct.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2531,8 +2746,20 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Askisi1_diairesi_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        help_Askisi1_diairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi1_diairesi_help));
+        Askisi1_diairesi_choice3.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        help_Askisi1_diairesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi1_diairesi_help);              
+            }
+        });
         btnReturn_Askisi1_diairesi.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2609,9 +2836,27 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Askisi2_diairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        Askisi2_diairesi_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        help_Askisi2_diairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi2_diairesi_help));
+        Askisi2_diairesi_choice2.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Askisi2_diairesi_choice3.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        help_Askisi2_diairesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi2_diairesi_help);                
+            }
+        });
         btnReturn_Askisi2_diairesi.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2669,8 +2914,20 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Askisi3_diairesi_choice1.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        Askisi3_diairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
+        Askisi3_diairesi_choice1.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Askisi3_diairesi_choice2.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
         Askisi3_diairesi_choice3_Correct.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2690,7 +2947,13 @@ public class MathsFX extends Application {
                 });
             }
         });
-        help_Askisi3_diairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi3_diairesi_help));
+        help_Askisi3_diairesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi3_diairesi_help);               
+            }
+        });
         btnReturn_Askisi3_diairesi.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2767,9 +3030,27 @@ public class MathsFX extends Application {
                 });
             }
         });
-        Askisi4_diairesi_choice2.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        Askisi4_diairesi_choice3.setOnAction(e -> WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!"));
-        help_Askisi4_diairesi.setOnAction(e -> Help_afairesi.display("Βοήθεια", Askisi2_diairesi_help));
+        Askisi4_diairesi_choice2.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        Askisi4_diairesi_choice3.setOnAction(new EventHandler<ActionEvent>(){
+           @Override
+           public void handle(ActionEvent event){
+               PlayWrong();
+               WrongAnswerBox.display("Λάθος Άπάντηση", "Ξαναπροσπάθησε!");
+           }
+        });
+        help_Askisi4_diairesi.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event){
+                PlayHelp();
+                Help_afairesi.display("Βοήθεια", Askisi4_diairesi_help);               
+            }
+        });
         btnReturn_Askisi4_diairesi.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -2917,28 +3198,6 @@ public class MathsFX extends Application {
         Layout_Askisi4_diairesi.setAlignment(btnReturn_Askisi4_diairesi, Pos.TOP_LEFT);
         Layout_Askisi4_diairesi.setAlignment(help_Askisi4_diairesi, Pos.TOP_LEFT);
         Layout_Askisi4_diairesi_Solution.setAlignment(btnReturn_Askisi4_diairesi_Solution, Pos.TOP_CENTER);
-        
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        
         
         btnReturnMine.setOnAction(new EventHandler<ActionEvent>() {
             @Override

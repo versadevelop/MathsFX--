@@ -28,8 +28,7 @@ class Help3 {
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle(title);
         window.setMinWidth(250);
-        AudioClip Sound = new AudioClip(Paths.get("src/Pop_clip.mp3").toUri().toString());
-        Sound.play(0.80);
+        
         Button closeButton = new Button("Κλείσιμο");
         closeButton.setOnAction(e -> window.close());
      

@@ -28,8 +28,7 @@ class Help2 {
         
         Button closeButton = new Button("Κλείσιμο");
         closeButton.setOnAction(e -> window.close());
-        AudioClip Sound = new AudioClip(Paths.get("src/Pop_clip.mp3").toUri().toString());
-        Sound.play(0.80);
+        
         StackPane layout = new StackPane();
         
         Label label = new Label();

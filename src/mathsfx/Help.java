@@ -26,8 +26,7 @@ class Help {
         window.setTitle(title);
         window.setMinWidth(250);
         
-        AudioClip Sound = new AudioClip(Paths.get("src/Pop_clip.mp3").toUri().toString());
-        Sound.play(0.80);
+        
         
         //helping = new ImageView(ScaleImage);
         

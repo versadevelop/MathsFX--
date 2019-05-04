@@ -33,8 +33,7 @@ class Help_afairesi {
         closeButton.setOnAction(e -> window.close());
      
         StackPane layout = new StackPane();
-        AudioClip Sound = new AudioClip(Paths.get("src/Pop_clip.mp3").toUri().toString());
-        Sound.play(0.80);
+        
         
         layout.getChildren().addAll(helping, closeButton);
         layout.setAlignment(closeButton, Pos.TOP_CENTER);

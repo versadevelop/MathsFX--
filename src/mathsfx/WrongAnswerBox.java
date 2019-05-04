@@ -27,8 +27,7 @@ class WrongAnswerBox {
         window.setTitle(title);
         window.setMinWidth(250);
         
-        AudioClip Sound = new AudioClip(Paths.get("src/Sad_clip.mp3").toUri().toString());
-        Sound.play(0.50);
+        
         
         Label label = new Label();
         label.setText(message);
